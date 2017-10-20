@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/public/css/tuijian.css">
+    <script src="/public/js/resize.js"></script>
+    <script src="/public/js/jquery-3.2.1.js"></script>
+    <title>推荐歌单</title>
+</head>
+<body>
+<div class="ban">
+    <div class="con">
+        <div class="top">
+            <a class="back" href="/index.php/first/index"></a>
+            <p>推荐歌单</p>
+            <a class="yi" href="/index.php/tui/index">已点歌曲</a>
+        </div>
+        <ul class="top_two">
+            <li>
+                <a href="/index.php/geshou/index">歌手</a>
+            </li>
+            <li><a  href="/index.php/geshou/paihang">排行</a></li>
+            <li>
+                <a href="/index.php/geshou/chang">常唱</a>
+            </li>
+            <li>
+                <div class="logo" style="margin-right: .05rem;margin-top: -.03rem"></div>
+                <a style="text-align:right" href="/index.php/tui/tuijian">推荐歌单</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div class="ph">
+    <?php foreach($data as $v): ?>
+        <a href="/index.php/tui/tuilist?id=<?php echo $v['id'] ?>">
+            <div class="left">
+                <?php echo $v['name'] ?>
+            </div>
+            <div class="right">
+                <p><span class="s1"></span><?php echo $v['listener'] ?></p>
+                <p style="justify-content: center;"><span class="s2"></span><?php echo $v['num'] ?></p>
+            </div>
+        </a>
+   <?php endforeach; ?>
+</div>
+
+
+</html>

@@ -1,0 +1,158 @@
+<?php include VIEW_PATH.'cbc-actt.html' ?>
+<section id="section" style="padding-top: .8rem;">
+    <div class="info">
+        <a href="/date/index.php/dynamic/home" class="button"
+             style="background: url('/date/public/img/dyna_sy_8.png') center center no-repeat;background-size: contain;">
+           拼车
+        </a>
+        <div class="box_box">
+            <ul class="content">
+                <?php foreach($data1 as $v): ?>
+                    <li class="center">
+                        <a href="/date/index.php/dynamic/home">
+                            <div class="top">
+                                <div class="top_one">
+                                    <div class="person" style=" background: url(' <?php echo $v['img'] ?>') center center no-repeat;
+                                                        background-size: cover;">
+                                    </div>
+                                    <h4 class="h4">
+                                        <?php echo $v['title_small']  ?>
+                                        <span class="num">
+                                                             <?php echo $v['num'] ?>
+                                                        </span>
+                                    </h4>
+                                </div>
+                                <h4 class="text">
+                                    <?php echo $v['info'] ?>
+                                    <span><?php echo $v['duration'] ?></span>
+                                </h4>
+                            </div>
+                            <div class="bottom">
+                                <h6 class="h6">约 <span><?php echo $v['price'] ?></span>元/人 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    AA制</h6>
+                                <h6 class="h6"><span><?php echo $v['person'] ?></span>人已参与 &nbsp;&nbsp;&nbsp; 上限
+                                    <span><?php echo $v['per_max'] ?></span>人</h6>
+                            </div>
+                        </a>
+
+                    </li>
+                <?php endforeach ?>
+            </ul>
+        </div>
+    </div>
+    <div class="info">
+        <a href="/date/index.php/dynamic/home" class="button"
+             style="background: url('/date/public/img/dyna_sy_8.png') center center no-repeat;background-size: contain;">
+            约饭
+        </a>
+        <div class="box_box">
+            <ul class="content">
+                <?php foreach($data2 as $v): ?>
+                <li class="center">
+                    <a href="/date/index.php/dynamic/home">
+                        <div class="top">
+                            <div class="top_one">
+                                <div class="person" style=" background: url(' <?php echo $v['img'] ?>') center center no-repeat;
+                                                        background-size: cover;">
+                                </div>
+                                <h4 class="h4">
+                                    <?php echo $v['title_small']  ?>
+                                    <span class="num">
+                                                             <?php echo $v['num'] ?>
+                                                        </span>
+                                </h4>
+                            </div>
+                            <h4 class="text">
+                                <?php echo $v['info'] ?>
+                                <span><?php echo $v['duration'] ?></span>
+                            </h4>
+                        </div>
+                        <div class="bottom">
+                            <h6 class="h6">约 <span><?php echo $v['price'] ?></span>元/人 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                AA制</h6>
+                            <h6 class="h6"><span><?php echo $v['person'] ?></span>人已参与 &nbsp;&nbsp;&nbsp; 上限
+                                <span><?php echo $v['per_max'] ?></span>人</h6>
+                        </div>
+                    </a>
+
+                </li>
+                <?php endforeach ?>
+            </ul>
+        </div>
+    </div>
+    <div class="info">
+        <a href="/date/index.php/dynamic/home" class="button"
+             style="background: url('/date/public/img/dyna_sy_8.png') center center no-repeat;background-size: contain;">
+            聚会
+        </a>
+        <div class="box_box">
+            <ul class="content">
+                <?php foreach($data3 as $v): ?>
+                <li class="center">
+                    <a href="/date/index.php/dynamic/home">
+                        <div class="top">
+                            <div class="top_one">
+                                <div class="person" style=" background: url(' <?php echo $v['img'] ?>') center center no-repeat;
+                                                        background-size: cover;">
+                                </div>
+                                <h4 class="h4">
+                                    <?php echo $v['title_small']  ?>
+                                    <span class="num">
+                                                             <?php echo $v['num'] ?>
+                                                        </span>
+                                </h4>
+                            </div>
+                            <h4 class="text">
+                                <?php echo $v['info'] ?>
+                                <span><?php echo $v['duration'] ?></span>
+                            </h4>
+                        </div>
+                        <div class="bottom">
+                            <h6 class="h6">约 <span><?php echo $v['price'] ?></span>元/人 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                AA制</h6>
+                            <h6 class="h6"><span><?php echo $v['person'] ?></span>人已参与 &nbsp;&nbsp;&nbsp; 上限
+                                <span><?php echo $v['per_max'] ?></span>人</h6>
+                        </div>
+                    </a>
+
+                </li>
+                <?php endforeach ?>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<?php include VIEW_PATH.'cbc-act.html' ?>
+
+<script>
+    window.addEventListener('load',function() {
+        let uls=document.querySelector('.content');
+        let ul = document.querySelectorAll('.content');
+        let Left=document.querySelectorAll('.box_box');
+        let lefts = document.querySelector('.box_box');
+        let maxw=uls.offsetWidth-lefts.offsetWidth;
+        let ox=0,cx=0;
+        let offsetX=0;
+        for(let i=0;i<ul.length;i++){
+            Left[i].addEventListener('touchstart',function(e){
+                let ev=e.changedTouches[0];
+                ox=ev.pageX;
+            },false);
+            Left[i].addEventListener('touchmove',function(e){
+                let ev=e.changedTouches[0];
+                cx=ev.pageX;
+                let lefts=cx-ox+offsetX;
+                if(lefts>=0){
+                    lefts=0;
+                }else if(lefts<=-maxw){
+                    lefts=-maxw;
+                }
+                ul[i].style.left=lefts+'px';
+            },false);
+            Left[i].addEventListener('touchend',function(){
+                offsetX = ul[i].offsetLeft;
+            },false)
+        }
+    });
+
+</script>

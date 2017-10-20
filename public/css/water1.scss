@@ -1,0 +1,259 @@
+$them: .6rem;
+$img: '/public/img/';
+$color: #fff;
+@mixin flex() {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex1() {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex2() {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin font() {
+  font-size: .26rem;
+}
+
+@mixin img() {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 2.22rem;
+  background: url($img +'water1/back.png') center center no-repeat;
+  background-size: cover;
+  @include flex();
+  position: relative;
+  .box {
+    width: 3.1rem;
+    height: .7rem;
+    background: #fff;
+    border-radius: $them;
+    @include flex1();
+    @include font();
+    color: $color;
+    span {
+      color: #545b72;
+    }
+    .son {
+      width: 1.56rem;
+      height: .53rem;
+      border-radius: $them;
+      color: #545b72;
+      @include flex();
+      span {
+        color: #545b72;
+      }
+    }
+    .son1 {
+      width: 1.56rem;
+      height: .53rem;
+      border-radius: $them;
+      color: #545b72;
+      position: relative;
+      z-index: 100;
+      @include flex();
+      span {
+        color: #545b72;
+      }
+    }
+  }
+}
+
+#change {
+  width: 1.56rem;
+  height: .53rem;
+  background: #ff318d;
+  border-radius: $them;
+  color: $color;
+  position: absolute;
+}
+header .box .son.active ~ #change {
+  transform: translate3d(0, 0, 0);
+}
+
+header .box .son1.active ~ #change {
+  transform: translate3d(100%, 0, 0);
+}
+
+section .big.show {
+  display: block;
+}
+
+section .big {
+  display: none;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 0 .24rem;
+  background: #fff;
+  .big {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    .box {
+      width: 100%;
+      height: 2.63rem;
+      border-bottom: .02rem solid #dcdcdc;
+      @include flex1();
+      .left {
+        flex: .7;
+        height: 1.77rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .right {
+        flex: .9;
+        height: 1.42rem;
+        @include flex1();
+        flex-wrap: wrap;
+        p {
+          width: 100%;
+          font-size: .26rem;
+          color: #575861;
+          span {
+            display: inline-flex;
+            width: .75rem;
+            height: .27rem;
+            background: url($img + 'water1/water4.png') center center no-repeat;
+            background-size: contain;
+          }
+        }
+        h1 {
+          width: auto;
+          height: .37rem;
+          color: #ff318d;
+          font-size: .26rem;
+        }
+        .bottom {
+          width: 100%;
+          height: .4rem;
+          @include flex1();
+          .first {
+            width: .36rem;
+            height: .36rem;
+            border-radius: 50%;
+            margin-right: .3rem;
+            @include flex();
+            img {
+              @include img();
+            }
+          }
+          .second {
+            width: .8rem;
+            height: .36rem;
+            border: .03rem solid #d5d5d5;
+            border-radius: 1rem;
+            font-size: .26rem;
+            color: #858585;
+            text-align: center;
+            line-height: .34rem;
+            font-weight: bold;
+            margin-right: .1rem;
+          }
+          .third {
+            width: .36rem;
+            height: .36rem;
+            border-radius: 50%;
+            @include flex();
+            img {
+              @include img();
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 0 .24rem;
+  .top {
+    width: 100%;
+    height: .6rem;
+    margin-top: .2rem;
+    @include flex1();
+    overflow: auto;
+    .zi {
+      display: block;
+      width: 2rem;
+      height: .3rem;
+      font-size: .24rem;
+      color: #464545;
+      line-height: .2rem;
+    }
+    .con {
+      width: 500%;
+      height: .6rem;
+      @include flex1();
+      span {
+        color: #fff;
+        font-size: .24rem;
+      }
+    }
+  }
+}
+
+.bottom {
+  width: 100%;
+  height: auto;
+  padding: .2rem 0;
+  @include flex1();
+  justify-content: space-between;
+  p {
+    width: auto;
+    height: auto;
+    padding: .1rem 0;
+    color: #fe318e;
+    font-size: .28rem;
+    span:nth-child(1) {
+      color: #fe318e;
+      font-size: .30rem;
+      font-weight: bold;
+      font-family: "Helvetica Neue LT Pro";
+    }
+    span:nth-child(2) {
+      color: #fe318e;
+      font-size: .24rem;
+      font-weight: bold;
+      font-family: "Helvetica Neue LT Pro";
+    }
+  }
+  .right {
+    width: 2.4rem;
+    height: .86rem;
+    background: url($img + 'water1/water8.png') center center no-repeat;
+    background-size: contain;
+  }
+}
+

@@ -1,0 +1,210 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+html,body{
+  overflow: scroll;
+}
+
+header {
+  width: 100%;
+  height: 2.22rem;
+  background: url("/public/img/water1/back.png") center center no-repeat;
+  background-size: cover;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .box {
+  width: 3.1rem;
+  height: .7rem;
+  background: #fff;
+  border-radius: 0.6rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  font-size: .26rem;
+  color: #fff;
+}
+
+header .box span {
+  color: #545b72;
+}
+
+header .box .son {
+  width: 1.56rem;
+  height: .53rem;
+  background: #ff318d;
+  border-radius: 0.6rem;
+  color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .box .son span {
+  color: #ff88bd;
+}
+
+header .box .son1 {
+  width: 1.56rem;
+  height: .53rem;
+  border-radius: 0.6rem;
+  color: #545b72;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .box .son1 span {
+  color: #545b72;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 0 .24rem;
+  background: #fff;
+}
+
+section .box {
+  width: 100%;
+  height: 2.63rem;
+  border-bottom: .02rem solid #dcdcdc;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+section .box .left {
+  flex: .6;
+  height: 1.77rem;
+}
+
+section .box .left img {
+  width: 100%;
+  height: 100%;
+}
+
+section .box .right {
+  flex: .9;
+  height: 1.42rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section .box .right p {
+  font-size: .26rem;
+  color: #575861;
+}
+
+section .box .right p span {
+  display: inline-flex;
+  width: .75rem;
+  height: .27rem;
+  background: url("/public/img/water1/water4.png") center center no-repeat;
+  background-size: contain;
+}
+
+section .box .right h1 {
+  width: auto;
+  height: .37rem;
+  color: #ff318d;
+  font-size: .26rem;
+}
+
+section .box .right .bottom {
+  width: 100%;
+  height: .4rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+section .box .right .bottom .first {
+  width: .36rem;
+  height: .36rem;
+  border-radius: 50%;
+  margin-right: .1rem;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .box .right .bottom .first img {
+  width: 100%;
+  height: 100%;
+}
+
+section .box .right .bottom .second {
+  width: .8rem;
+  height: .36rem;
+  border: .03rem solid #d5d5d5;
+  border-radius: 1rem;
+  font-size: .26rem;
+  color: #858585;
+  text-align: center;
+  line-height: .34rem;
+  font-weight: bold;
+  margin-right: .1rem;
+}
+
+section .box .right .bottom .third {
+  width: .36rem;
+  height: .36rem;
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .box .right .bottom .third img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 0 .24rem;
+}
+
+footer .top {
+  width: 100%;
+  height: .6rem;
+}
+
+footer .top p {
+  width: .65rem;
+  height: 100%;
+  font-size: .26rem;
+  color: #464545;
+}
+
+footer .top h4 {
+  width: auto;
+  height: 100%;
+  padding: .1rem .3rem;
+  background: #fe318e;
+  font-size: .26rem;
+}
+
+footer .top h4 span {
+  color: #fff;
+  font-size: .26rem;
+}

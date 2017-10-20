@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/date/public/css/bootstrap.css">
+    <script src="/date/public/js/jquery.js"></script>
+    <script src=""></script>
+    <title>头部信息</title>
+</head>
+<style>
+    .dropdown-menu.active {
+        display: block;
+    }
+
+    .con {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .form-group {
+        height: 40px;
+    }
+
+    .tip {
+        width: 3px;
+        height: 3px;
+        background: red;
+        border-radius: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #ccc;
+    }
+    .navbar-nav >li.active{
+
+    }
+    .affix .bs-docs-sidenav .nav>li.active{
+        background: #F8F8F8;
+    }
+</style>
+<body>
+<nav class="navbar navbar-default">
+    <div class="con">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">相约管理系统</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav">
+                <li class=""><a href="/index.php/wateradmin/index">信息管理<span class="sr-only">(current)</span></a></li>
+                <li class=""><a href="/index.php/game_admin/index">动态管理</a></li>
+                <li class=""><a href="#">用户管理</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<script>
+    $(function () {
+        $('.navbar-nav>li').on('click', function () {
+            $('.navbar-nav>li').removeClass('active');
+            $(this).addClass('active');
+        });
+        $('.dropdown-toggle').on('click', function () {
+            $(this).next().toggle();
+            return false;
+        });
+        $(document).on('click', function () {
+            $('.dropdown-menu').hide();
+        });
+        $('.affix .bs-docs-sidenav .nav').on('click','li',function () {
+            $(this).addClass('active');
+        });
+        $('.affix .bs-docs-sidenav .nav>li:eq(0)').on('click',function () {
+            $(this).addClass('active');
+        })
+
+    })
+</script>
+

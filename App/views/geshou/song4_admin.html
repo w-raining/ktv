@@ -1,0 +1,87 @@
+
+<?php include 'App/views/admin_header.html' ?>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2">
+            <?php include 'App/views/water/sidebar.html' ?>
+        </div>
+        <div class="col-xs-10">
+            <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+                <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active" id="add"><a href="#add" id="home-tab" role="tab" data-toggle="tab"
+                                                                       aria-controls="home" aria-expanded="true">歌单管理</a></li>
+                    <li role="presentation" id="list"><a href="#list" role="tab" id="profile-tab" data-toggle="tab"
+                                                         aria-controls="profile">分类列表</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="add-tab" aria-labelledby="home-tab">
+                        <div class="tip">
+
+                        </div>
+                        <div class="panel panel-info">
+                            <div class="panel-heading" style="text-align: center;margin-bottom: 30px">歌单管理</div>
+                            <table class="table" style="padding:20px">
+                                <form class="form-horizontal" id="from" action="/index.php/page/insert" method="post">
+                                    <!--<input type="hidden" >-->
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name='name' class="form-control" id="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">listener</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="listenter" class="form-control" id="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">num</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="num" class="form-control" id="" placeholder="">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" id='btn' class="btn btn-default">提交</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </table>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="list-tab" aria-labelledby="profile-tab">
+                        <div class="panel panel-warning" style="text-align: center;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">分类列表</h3>
+                            </div>
+
+                        </div>
+                        <div class="bs-example" data-example-id="simple-table">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th style="text-align: center">id</th>
+                                    <th style="text-align: center">name</th>
+                                    <th style="text-align: center">listener</th>
+                                    <th style="text-align: center">num</th>
+                                    <th style="text-align: center">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="/public/js/song4_admin.js"></script>

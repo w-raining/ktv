@@ -1,0 +1,324 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ting {
+    width: 100%;
+    height: 4.38rem;
+}
+
+.ting .person {
+    width: 100%;
+    height: 4.38rem;
+    box-shadow: 0px 5px 6px 0px #F4F4F4;
+    background: white;
+    position: fixed;
+    z-index: 100;
+}
+
+.ting .person .header {
+    width: 100%;
+    height: 2.2rem;
+    background: url("/date/public/img/person_14.png") center center no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.ting .person .header .top {
+    width: 100%;
+    height: 0.88rem;
+}
+
+.ting .person .header .top ul {
+    width: 100%;
+    height: 0.4rem;
+}
+
+.ting .person .header .top ul a {
+    width: auto;
+    height: .88rem;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.ting .person .header .top ul a li {
+    width: 0.22rem;
+    height: 0.36rem;
+    margin-left: 0.24rem;
+}
+
+.ting .person .header .top ul a .return {
+    background: url("/date/public/img/person_1.png") center center no-repeat;
+    background-size: contain;
+}
+
+.ting .person .header .top ul a:last-child {
+    float: right;
+    margin-right: 0.28rem;
+}
+
+.ting .person .header .top ul a:last-child .setup {
+    width: 0.39rem;
+    height: 0.39rem;
+    background: url("/date/public/img/person_15.png") center center no-repeat;
+    background-size: contain;
+    float: right;
+}
+
+.ting .person .header .circle .tou {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background: url("/date/public/img/dyna_sy_3.jpg") center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -0.9rem;
+    left: 38%;
+    box-shadow: 0px 3px 3px 1px #C9CACA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ting .person .header .circle .tou img {
+    width: 100%;
+    height: 100%;
+}
+
+.ting .person .header .circle .left {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: #372D23;
+    position: absolute;
+    bottom: -0.36rem;
+    left: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 1px 0px #C9CACA;
+}
+
+.ting .person .header .circle .left img {
+    width: 50%;
+    height: 50%;
+}
+
+.ting .person .header .circle .left1 {
+    bottom: -0.2rem;
+    left: 6%;
+}
+
+.ting .person .header .circle .left2 {
+    width: 1.02rem;
+    height: 1.02rem;
+    bottom: -0.46rem;
+    left: 73.4%;
+}
+
+.ting .person .header .circle .left2 img {
+    width: 60.8%;
+    height: 58.8%;
+}
+
+.nickname {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.08rem;
+}
+
+.nickname h2 {
+    font-size: 0.32rem;
+    color: #000;
+}
+
+.nickname p {
+    font-size: 0.24rem;
+    color: #85DBFE;
+    margin-top: 0.18rem;
+}
+
+.content {
+    margin-left: 0.24rem;
+    margin-right: 0.24rem;
+    height: 2.8rem;
+    margin-top: 0.24rem;
+    border-radius: 4px;
+}
+
+.content .head {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 3px 3px #F4F4F4;
+}
+
+.content .head .left {
+    width: 0.142%;
+    height: 100%;
+    float: left;
+    border-radius: 4px;
+}
+
+.content .head .left .shu {
+    height: 0.78rem;
+    width: 1rem;
+    position: relative;
+}
+
+.content .head .left .shu .sz h1 {
+    margin-right: 0.06rem;
+    font-size: 0.38rem;
+    float: right;
+}
+
+.content .head .left .shu .sz1 {
+    position: absolute;
+    bottom: 0.03rem;
+    padding-left: 0.06rem;
+}
+
+.content .head .left .shu .sz1 h2 {
+    font-size: 0.2rem;
+}
+
+.content .head .left .shu .xie {
+    width: 0.46rem;
+    height: 0.46rem;
+    position: absolute;
+    bottom: 0.05rem;
+    left: 0.28rem;
+    background: url("/date/public/img/person_13.png") center center no-repeat;
+    background-size: contain;
+}
+
+.content .head .right {
+    width: 85.8%;
+    height: 100%;
+    float: right;
+    background: #FBFBFB;
+}
+
+.content .head .right .rtop {
+    height: 0.78rem;
+}
+
+.content .head .right .rtop h2 {
+    font-size: 0.3rem;
+    line-height: 0.78rem;
+    padding-left: 0.24rem;
+}
+
+.content .head .right .tu {
+    width: 100%;
+    height: 2.02rem;
+    line-height: 100%;
+    padding-left: 0.24rem;
+}
+
+.content .head .right .tu .tu1 {
+    width: 5.56rem;
+    height: 1.8rem;
+    overflow: hidden;
+}
+
+.content .head .right .tu .tu1 ul {
+    width: 6.4rem;
+    height: 1.8rem;
+    position: relative;
+}
+
+.content .head .right .tu .tu1 ul a li {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.24rem;
+    float: left;
+}
+
+.content .head .right .tu .tu1 ul a:nth-child(3) li {
+    margin-right: 0;
+}
+
+.box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.98rem;
+    background: #372D23;
+    display: flex;
+}
+
+.box a {
+    width: 25%;
+}
+
+.box a li {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 0.6rem 0.6rem;
+    background-position: center;
+}
+
+.content:nth-child(5){
+    margin-bottom: 1.2rem;
+}

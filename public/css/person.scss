@@ -1,0 +1,259 @@
+$them: .6rem;
+$img: '/public/img/';
+$color: #fff;
+@mixin flex() {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex1() {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex2() {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin font() {
+  font-size: .26rem;
+}
+
+@mixin img() {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url($img + 'person/p1.png') center center no-repeat;
+  background-size: contain;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  margin-top: .3rem;
+  p {
+    width: 100%;
+    height: auto;
+    font-size: .3rem;
+    color: #fff;
+    text-align: center;
+    span {
+      display: inline-block;
+      width: .08rem;
+      height: .08rem;
+      border-radius: 50%;
+      background: #fff;
+      margin-bottom: .06rem;
+    }
+  }
+  h5 {
+    width: 100%;
+    height: auto;
+    font-size: .3rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.per {
+
+  width: auto;
+  height: auto;
+  padding: 0 .24rem;
+  @include flex1();
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  h4 {
+    width: auto;
+    height: auto;
+    font-size: .26rem;
+    color: #fff;
+    margin-right: .2rem;
+    margin-bottom: .4rem;
+    span {
+      font-size: .2rem;
+      color: #fff;
+    }
+  }
+  .circle {
+    width: 1.72rem;
+    height: 1.72rem;
+    border-radius: 50%;
+    background: url($img + 'person/p6.png') -.8rem -.5rem no-repeat;
+    background-size: 4rem;
+    box-shadow: 1px 1px 15px 1px #BB197C;
+    position: relative;
+    margin-right: .6rem;
+    .xiao {
+      width: .48rem;
+      height: .48rem;
+      border-radius: 50%;
+      background-size: 4rem;
+      box-shadow: 1px 1px 15px 1px #BB197C;
+      background: url($img + 'person/p2.png') center center no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: 0;
+      right: -.2rem;
+    }
+  }
+}
+
+.per_two {
+  width: 100%;
+  height: auto;
+  padding: 0 .6rem;
+  margin-top: .3rem;
+  p:nth-child(1) {
+    width: 100%;
+    height: auto;
+    font-size: .26rem;
+    color: #22B0FC;
+    text-align: right;
+    margin-bottom: .03rem;
+  }
+  p:nth-child(2) {
+    width: 100%;
+    height: auto;
+    font-size: .22rem;
+    color: #22B0FC;
+    text-align: right;
+    margin-bottom: .03rem;
+
+  }
+  p:nth-child(3) {
+    width: 100%;
+    height: auto;
+    font-size: .22rem;
+    color: #383F42;
+    text-align: right;
+
+  }
+}
+
+.center {
+  width: 100%;
+  height: 1.28rem;
+  padding: 0 .25rem;
+  @include flex1();
+  flex-wrap: nowrap;
+  div {
+    width: 33%;
+    height: 1.1rem;
+    box-shadow: 1px 1px 3px .5px #ccc;
+    border: 1px solid #ccc;
+    margin-right: 1%;
+    border-radius: .1rem;
+    position: relative;
+    .tu {
+      display: block;
+      width: 70%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url($img + 'person/p3.png') center center no-repeat;
+      background-size: cover;
+    }
+    .t1 {
+      display: block;
+      width: 70%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url($img + 'person/p4.png') center center no-repeat;
+      background-size: cover;
+    }
+    .t2 {
+      display: block;
+      width: 70%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url($img + 'person/p5.png') center center no-repeat;
+      background-size: cover;
+    }
+    h3 {
+      height: .5rem;
+      color: #FF2888;
+      font-size: .4rem;
+      margin-top: .1rem;
+      margin-left: .1rem;
+      span {
+        display: inline-block;
+        width: auto;
+        color: #24B0FC;
+        height: auto;
+        font-size: .22rem;
+        margin-top: -.5rem;
+      }
+    }
+    p {
+      color: #565EFF;
+      margin-left: .1rem;
+
+      font-size: .2rem;
+    }
+  }
+  /*div:nth-child(1){
+    background: url($img + 'person/p3.png');
+  }*/
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 0 .24rem;
+  margin-top: .2rem;
+  h3 {
+    width: auto;
+    height: auto;
+    color: #F94397;
+    font-size: .28rem;
+  }
+  p {
+    width: auto;
+    height: auto;
+    color: #6D74FF;
+    font-size: .28rem;
+  }
+  div {
+    width: 100%;
+    height: auto;
+    padding: .2rem 0;
+    border-bottom: .02rem dashed #c7c7c7;
+    h4 {
+      font-size: .26rem;
+      color: #89919E;
+    }
+    p {
+      font-size: .2rem;
+      color: #C7C7C7;
+      margin-top: .05rem;
+    }
+  }
+}

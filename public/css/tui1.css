@@ -1,0 +1,188 @@
+/*
+* @Author: Administrator
+* @Date:   2017-06-12 01:13:23
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-06-12 01:31:43
+*/
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: '苹方';
+}
+
+a {
+    text-decoration: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    position: relative;
+    background: #f7f7f7;
+
+}
+
+.ban {
+    width: 100%;
+    height: 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: url("/public/img/paihang/p10.png") center center no-repeat;
+    background-size: cover;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+}
+
+.ban .con {
+    width: 100%;
+    padding: 0 0.24rem 0.24rem .24rem;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.ban .top {
+    width: 100%;
+    height: .4rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin-top: .26rem;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.ban .top .yi {
+    display: inline-flex;
+    width: 1rem;
+    height: .4rem;
+    color: #fff;
+    text-align: center;
+    line-height: .4rem;
+    font-size: .24rem;
+    border-radius: .1rem;
+    position: absolute;
+    right: 0;
+    font-weight: 600;
+}
+
+.ban .back {
+    display: block;
+    width: .4rem;
+    height: .4rem;
+    background: url("/public/img/singer1/singer7.png") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.ban .top > p {
+    display: block;
+    width: 1.8rem;
+    text-align: center;
+    color: #fff;
+    font-size: .3rem;
+    margin: 0 auto;
+}
+
+.list {
+    width: 100%;
+    height: 3rem;
+    padding: 0 0.24rem 0.24rem .24rem;
+    margin: 0 auto;
+    margin-top: .1rem;
+    position: relative;
+    z-index: 20;
+}
+
+.list .con {
+    width: 100%;
+    height: auto;
+    background: #f7f7f7;
+}
+
+.list .con > div {
+    width: 100%;
+    height: 1.57rem;
+    border-bottom: 1px dashed #adacac;
+    position: relative;
+
+}
+
+.list .left {
+    width: 1rem;
+    height: 1rem;
+    border-radius: .2rem;
+    margin-left: .05rem;
+    margin-top: .25rem;
+    transform: rotate(8deg);
+    position: absolute;
+    background: #fe3191;
+}
+
+.list .left1 {
+    width: 1rem;
+    height: 1rem;
+    border-radius: .15rem;
+    padding: .02rem;
+    position: absolute;
+    top: .25rem;
+    left: .045rem;
+    z-index: 10;
+}
+
+.list .list1 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.list .list1 a > .text {
+    width: 3.2rem;
+    height: .78rem;
+    color: #89919E;
+    font-size: .26rem;
+    margin-left: 1.5rem;
+    margin-top: .38rem;
+
+}
+
+.list .list1 a > .text > span {
+    font-size: .24rem;
+    color: #898989;
+}
+
+.list .list1 a > .del {
+    width: .5rem;
+    height: .5rem;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: .5rem;
+    right: .8rem;
+    background: url("/public/img/tuijian/delete.png") center center no-repeat;
+    background-size: contain;
+}
+
+.list .list1 a > .tops {
+    width: .5rem;
+    height: .5rem;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: .5rem;
+    right: .2rem;
+    background: url("/public/img/tuijian/stick.png") center center no-repeat;
+    background-size: contain;
+}
+
+.list .list1:last-child {
+    border-bottom: 0;
+}
+.list  .list1:first-child .tops{
+    background: none;
+}

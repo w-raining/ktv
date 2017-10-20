@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/public/css/caiyan.css">
+    <script src="/public/js/resize.js"></script>
+    <script src="/public/js/jquery-3.2.1.js"></script>
+    <script src="/public/js/plus.js"></script>
+    <title>详情页</title>
+</head>
+<style>
+    .song #plus1.rotate{
+        transition: all ease .3s;
+        transform: rotateZ(-405deg);
+    }
+</style>
+<body>
+
+<div class="ban" style=" background: url('<?php echo $data['img_url'] ?>') center -.9rem no-repeat;
+background-size: cover;">
+    <img src="<?php echo $data['img_url'] ?>" alt="" style="width: 120%;position: absolute;top:0;left:0;">
+    <div class="con">
+        <div class="top">
+            <a class="back" href="javascript:history.go(-1)"></a>
+            <p><?php echo $data['singer'] ?></p>
+            <a class="yi" href="/index.php/tui/index">已点歌曲</a>
+        </div>
+        <div class="center">
+            <div class="left">
+            </div>
+            <div class="left1" style=" background: url('<?php echo $data['img_url'] ?>') -.1rem -0.05rem no-repeat;
+            background-size: cover"></div>
+            <div class="right">
+                <p>
+                    CAOIU YABS
+                    <span style="display: inline-block;width: .3rem;height:.04rem;background: #fff;margin-bottom: .08rem"></span>
+                    <span style="font-size: .26rem"><?php echo $data['content'] ?></span>
+                </p>
+                <p>
+                    <span><img src="/public/img/caiyan/c1.png" alt=""></span>
+                    &nbsp;&nbsp;歌曲
+                    &nbsp;&nbsp;<span><img src="/public/img/caiyan/c2.png" alt=""></span>
+                    &nbsp;&nbsp;MV
+                </p>
+                <div></div>
+                <p>本月点击量：49080</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bei">
+
+    </div>
+</div>
+
+
+
+<ul class="song" style="background: #fff; position: relative;z-index:100;">
+    <?php foreach($list as $k=>$v): ?>
+        <li id="<?php echo 'c'.$v['id']?>" data='<?php echo json_encode($v) ?>' >
+            <p>0<?php echo $k + 1 ?></p>
+            <p><?php echo $v['name'] ?><br><span><?php echo $v['duration'] ?></span></p>
+            <div id="plus1"><img src="/public/img/caiyan/c4.png" alt="" id="xuan"></div>
+        </li>
+    <?php endforeach ?>
+</ul>
+</body>
+
+</html>
+

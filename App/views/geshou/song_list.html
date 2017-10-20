@@ -1,0 +1,9 @@
+<ul class="song">
+    <?php foreach($data as $k=>$v): ?>
+    <li id="<?php echo 'c'.$v['id']?>" data='<?php echo json_encode($v) ?>'>
+        <p>0<?php echo $k+1 ?></p>
+        <p><?php echo $v['name'] ?><br><span><?php echo $v['duration'] ?></span></p>
+        <div id="plus1"><img src="/public/img/caiyan/c4.png" alt="" id="xuan"></div>
+    </li>
+    <?php endforeach ?>
+</ul>

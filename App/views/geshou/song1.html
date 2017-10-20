@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/public/css/song1.css">
+    <script src="/public/js/resize.js"></script>
+    <script src="/public/js/jquery-3.2.1.js"></script>
+    <title>歌手1</title>
+</head>
+<body>
+<div class="ban">
+    <div class="con">
+        <div class="top">
+            <a class="back" href="/index.php/first/index"></a>
+            <p>歌手</p>
+            <a class="yi" href="/index.php/tui/index">已点歌曲</a>
+        </div>
+        <ul class="top_two">
+            <li>
+                <div class="logo" style="margin-right: .05rem"></div>
+                <a>歌手</a>
+            </li>
+            <li><a style="text-align: center" href="/index.php/geshou/paihang">排行</a></li>
+            <li><a style="text-align: center" href="/index.php/geshou/chang">常唱</a></li>
+            <li><a style="text-align:right" href="/index.php/tui/tuijian">推荐歌单</a></li>
+        </ul>
+        <div class="inputs">
+            <input type="text" placeholder="请输入您要搜索的歌手">
+            <div class="search"></div>
+        </div>
+    </div>
+</div>
+<ul class="ph">
+    <?php foreach($data as $v):?>
+    <li>
+        <a href="/index.php/geshou/song2?cid=<?php echo $v['id']?>" style="background-image: url('<?php echo $v["imgurl"] ?>');background-repeat:no-repeat;">
+            <p  style="font-size: .24rem;display: flex;justify-content: center;align-items: center" >
+                <?php echo $v['name'] ?>
+            </p>
+        </a>
+    </li>
+    <?php endforeach ?>
+</ul>
+</body>
+</html>

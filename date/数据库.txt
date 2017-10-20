@@ -1,0 +1,468 @@
+-- phpMyAdmin SQL Dump
+-- version 4.1.14
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: 2017-07-09 12:19:06
+-- 服务器版本： 5.6.17
+-- PHP Version: 5.5.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `xiangyue`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `admin_password`
+--
+
+CREATE TABLE IF NOT EXISTS `admin_password` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `admin` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8 NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- 转存表中的数据 `admin_password`
+--
+
+INSERT INTO `admin_password` (`id`, `admin`, `password`) VALUES
+(1, 'ligaofeng', '123456'),
+(2, '13453762038', '123456');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `dynamic_car`
+--
+
+CREATE TABLE IF NOT EXISTS `dynamic_car` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `img_top` varchar(255) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL,
+  `title_small` varchar(255) DEFAULT NULL,
+  `num` int(12) DEFAULT NULL,
+  `info` varchar(255) DEFAULT NULL,
+  `duration` varchar(255) DEFAULT NULL,
+  `price` varchar(255) DEFAULT NULL,
+  `person` int(12) DEFAULT NULL,
+  `per_max` int(12) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- 转存表中的数据 `dynamic_car`
+--
+
+INSERT INTO `dynamic_car` (`id`, `img_top`, `img`, `title_small`, `num`, `info`, `duration`, `price`, `person`, `per_max`) VALUES
+(1, '/date/public/dyna_sy_8.png', '/date/public/img/dyna_sy_3.jpg', '哈哈楼啊', 765, '山西大学到榆次老城', '2017年6月1日下午2点', '20', 2, 4),
+(2, '/date/public/dyna_sy_9.png', '/date/public/img/dyna_sy_4.jpg', '哈哈楼啊', 765, '山西大学到榆次老城', '2017年6月1日下午2点', '20', 2, 4),
+(3, '/date/public/dyna_sy_10.png', '/date/public/img/dyna_sy_1.jpg', '哈哈楼啊', 765, '山西大学到榆次老城', '2017年6月1日下午2点', '20', 2, 4);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `dynamic_date`
+--
+
+CREATE TABLE IF NOT EXISTS `dynamic_date` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `img_top` varchar(255) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL,
+  `title_small` varchar(255) DEFAULT NULL,
+  `num` int(12) DEFAULT NULL,
+  `info` varchar(255) DEFAULT NULL,
+  `duration` varchar(255) DEFAULT NULL,
+  `price` varchar(255) DEFAULT NULL,
+  `person` int(12) DEFAULT NULL,
+  `per_max` int(12) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- 转存表中的数据 `dynamic_date`
+--
+
+INSERT INTO `dynamic_date` (`id`, `img_top`, `img`, `title_small`, `num`, `info`, `duration`, `price`, `person`, `per_max`) VALUES
+(1, '/date/public/dyna_sy_8.png', '/date/public/img/dyna_sy_2.jpg', '哈哈楼啊', 765, '世贸魔方KTV', '2017年6月1日下午2点', '20', 2, 4),
+(2, '/date/public/dyna_sy_9.png', '/date/public/img/dyna_sy_6.jpg', '哈哈楼啊', 765, '蒙山户外BBQ', '2017年6月1日下午2点', '20', 2, 4),
+(3, '/date/public/dyna_sy_10.png', '/date/public/img/dyna_sy_1.jpg', '哈哈楼啊', 765, '山西大学到榆次老城', '2017年6月1日下午2点', '20', 2, 4);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `dynamic_eat`
+--
+
+CREATE TABLE IF NOT EXISTS `dynamic_eat` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `img_top` varchar(255) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL,
+  `title_small` varchar(255) DEFAULT NULL,
+  `num` int(12) DEFAULT NULL,
+  `info` varchar(255) DEFAULT NULL,
+  `duration` varchar(255) DEFAULT NULL,
+  `price` varchar(255) DEFAULT NULL,
+  `person` int(12) DEFAULT NULL,
+  `per_max` int(12) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- 转存表中的数据 `dynamic_eat`
+--
+
+INSERT INTO `dynamic_eat` (`id`, `img_top`, `img`, `title_small`, `num`, `info`, `duration`, `price`, `person`, `per_max`) VALUES
+(1, '/date/public/dyna_sy_8.png', '/date/public/img/dyna_sy_5.jpg', '哈哈楼啊', 765, '山西大学老榆熟食店', '2017年6月1日下午2点', '98', 2, 4),
+(2, '/date/public/dyna_sy_9.png', '/date/public/img/dyna_sy_6.jpg', '哈哈楼啊', 765, '北美新天地海底捞火', '2017年6月1日下午2点', '23', 2, 4),
+(3, '/date/public/dyna_sy_10.png', '/date/public/img/dyna_sy_1.jpg', '哈哈楼啊', 765, '山西大学老榆熟食店', '2017年6月1日下午2点', '20', 2, 4);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `email`
+--
+
+CREATE TABLE IF NOT EXISTS `email` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) DEFAULT NULL,
+  `password3` varchar(255) DEFAULT NULL,
+  `password4` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- 转存表中的数据 `email`
+--
+
+INSERT INTO `email` (`id`, `email`, `password3`, `password4`) VALUES
+(1, '1343631004@qq.com', 'wangshiyu', 'wangshiyu'),
+(2, 'qwe', 'qwe', 'qwe'),
+(3, '', '', ''),
+(4, '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `friend`
+--
+
+CREATE TABLE IF NOT EXISTS `friend` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `nid` int(12) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `sign` varchar(255) DEFAULT NULL,
+  `act` varchar(255) DEFAULT NULL,
+  `message` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+
+--
+-- 转存表中的数据 `friend`
+--
+
+INSERT INTO `friend` (`id`, `nid`, `name`, `pic`, `sign`, `act`, `message`) VALUES
+(1, 1, '白木子', '/date/public/img/list_lt_1.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(2, 1, '白昕月', '/date/public/img/list_lt_2.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(3, 2, '白木子', '/date/public/img/list_lt_3.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(4, 2, '白木子', '/date/public/img/list_lt_5.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(5, 3, '白木子', '/date/public/img/list_lt_3.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(6, 3, '白木子', '/date/public/img/list_lt_3.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(7, 1, '安维辰', '/date/public/img/list_lt_1.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(8, 1, '安芷汐', '/date/public/img/list_lt_2.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(9, 2, '白舒苒', '/date/public/img/list_lt_3.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(10, 2, '白木子', '/date/public/img/list_lt_5.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(11, 3, '楚安安', '/date/public/img/list_lt_3.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(12, 1, '安维辰', '/date/public/img/list_lt_1.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `lzlpic`
+--
+
+CREATE TABLE IF NOT EXISTS `lzlpic` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `age` int(12) DEFAULT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `content` varchar(255) DEFAULT NULL,
+  `good` int(12) DEFAULT NULL,
+  `comment` int(12) DEFAULT NULL,
+  `share` int(12) DEFAULT NULL,
+  `pic1` varchar(255) DEFAULT NULL,
+  `pic2` varchar(255) DEFAULT NULL,
+  `pic3` varchar(255) DEFAULT NULL,
+  `pic4` varchar(255) DEFAULT NULL,
+  `pic5` varchar(255) DEFAULT NULL,
+  `pic6` varchar(255) DEFAULT NULL,
+  `ctime` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- 转存表中的数据 `lzlpic`
+--
+
+INSERT INTO `lzlpic` (`id`, `name`, `age`, `pic`, `content`, `good`, `comment`, `share`, `pic1`, `pic2`, `pic3`, `pic4`, `pic5`, `pic6`, `ctime`) VALUES
+(1, '哈哈喽啊2', 21, '/date/public/img/lzl-23.png', '时光荏苒，岁月穿梭！学如逆水行舟，不进则退经历的多了你就懂了', 0, 0, 0, '/date/public/img/lzl-24.png', '/date/public/img/lzl-25.png', '/date/public/img/lzl-26.png', '/date/public/img/lzl-24.png', '/date/public/img/lzl-25.png', '/date/public/img/lzl-26.png', '2017-07-07 06:49:09');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `lzlschool`
+--
+
+CREATE TABLE IF NOT EXISTS `lzlschool` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `age` int(12) DEFAULT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `ctime` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `sex` varchar(255) NOT NULL,
+  `img_gender` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+--
+-- 转存表中的数据 `lzlschool`
+--
+
+INSERT INTO `lzlschool` (`id`, `name`, `age`, `pic`, `ctime`, `sex`, `img_gender`) VALUES
+(1, '哈哈喽啊1', 20, '/date/public/img/lzl-4.png', '2017-07-07 06:49:08', '2', '/date/public/img/lzl-7.png'),
+(2, '哈哈喽啊2', 21, '/date/public/img/lzl-5.png', '2017-07-07 06:49:08', '3', '/date/public/img/lzl-9.png'),
+(3, '哈哈喽啊3', 22, '/date/public/img/lzl-6.png', '2017-07-07 06:49:08', '2', '/date/public/img/lzl-7.png'),
+(4, '哈哈喽啊4', 23, '/date/public/img/lzl-10.png', '2017-07-07 06:49:08', '3', '/date/public/img/lzl-9.png'),
+(5, '哈哈喽啊5', 24, '/date/public/img/lzl-11.png', '2017-07-07 06:49:08', '2', '/date/public/img/lzl-7.png'),
+(6, '哈哈喽啊6', 25, '/date/public/img/lzl-12.png', '2017-07-07 06:49:08', '3', '/date/public/img/lzl-9.png');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `lzlsp`
+--
+
+CREATE TABLE IF NOT EXISTS `lzlsp` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `age` int(12) DEFAULT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `content` varchar(255) DEFAULT NULL,
+  `good` int(12) DEFAULT NULL,
+  `comment` int(12) DEFAULT NULL,
+  `share` int(12) DEFAULT NULL,
+  `mp4` varchar(255) DEFAULT NULL,
+  `ctime` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- 转存表中的数据 `lzlsp`
+--
+
+INSERT INTO `lzlsp` (`id`, `name`, `age`, `pic`, `content`, `good`, `comment`, `share`, `mp4`, `ctime`) VALUES
+(1, '哈哈喽啊3', 22, '/date/public/img/lzl-29.png', '时光荏苒，岁月穿梭！学如逆水行舟，不进则退经历的多了你就懂了', 0, 0, 0, '/date/public/img/lzl-30.png', '2017-07-07 06:49:09');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `lzlvillage`
+--
+
+CREATE TABLE IF NOT EXISTS `lzlvillage` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `age` int(12) DEFAULT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `content` varchar(255) DEFAULT NULL,
+  `ctime` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- 转存表中的数据 `lzlvillage`
+--
+
+INSERT INTO `lzlvillage` (`id`, `name`, `age`, `pic`, `content`, `ctime`) VALUES
+(1, '哈哈喽啊1', 20, '/date/public/img/lzl-13.png', '哈哈哈然后他好友德国解放军反对感动格萨火锅该喝喝国首广告歌...', '2017-07-07 06:49:08'),
+(2, '哈哈喽啊2', 21, '/date/public/img/lzl-14.png', '哈哈哈然后他好友德国解放军反对感动格萨火锅该喝喝国首广告歌...', '2017-07-07 06:49:08'),
+(3, '哈哈喽啊3', 22, '/date/public/img/lzl-15.png', '哈哈哈然后他好友德国解放军反对感动格萨火锅该喝喝国首广告歌...', '2017-07-07 06:49:08');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `lzlword`
+--
+
+CREATE TABLE IF NOT EXISTS `lzlword` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `age` int(12) DEFAULT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `content` varchar(255) DEFAULT NULL,
+  `good` int(12) DEFAULT NULL,
+  `comment` int(12) DEFAULT NULL,
+  `share` int(12) DEFAULT NULL,
+  `ctime` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- 转存表中的数据 `lzlword`
+--
+
+INSERT INTO `lzlword` (`id`, `name`, `age`, `pic`, `content`, `good`, `comment`, `share`, `ctime`) VALUES
+(1, '哈哈喽啊1', 20, '/date/public/img/lzl-19.png', '时光荏苒，岁月穿梭！学如逆水行舟，不进则退经历的多了你就懂了', 23, 0, 0, '2017-07-07 06:49:08'),
+(2, '哈哈喽啊1', 20, '/date/public/img/lzl-19.png', '时光荏苒，岁月穿梭！学如逆水行舟，不进则退经历的多了你就懂了', 23, 0, 0, '2017-07-07 06:49:08');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `message`
+--
+
+CREATE TABLE IF NOT EXISTS `message` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `nid` int(12) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `sign` varchar(255) DEFAULT NULL,
+  `act` varchar(255) DEFAULT NULL,
+  `message` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+--
+-- 转存表中的数据 `message`
+--
+
+INSERT INTO `message` (`id`, `nid`, `name`, `pic`, `sign`, `act`, `message`) VALUES
+(1, 1, '白木子', '/date/public/img/list_lt_1.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(2, 1, '白昕月', '/date/public/img/list_lt_2.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(3, 2, '白木子', '/date/public/img/list_lt_3.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(4, 2, '白木子', '/date/public/img/list_lt_5.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(5, 3, '白木子', '/date/public/img/list_lt_3.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(6, 3, '白木子', '/date/public/img/list_lt_3.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `number`
+--
+
+CREATE TABLE IF NOT EXISTS `number` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `number` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+--
+-- 转存表中的数据 `number`
+--
+
+INSERT INTO `number` (`id`, `number`) VALUES
+(1, 'A'),
+(2, 'B'),
+(3, 'C'),
+(4, 'D'),
+(5, 'E'),
+(6, 'F');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `numorder`
+--
+
+CREATE TABLE IF NOT EXISTS `numorder` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `number` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+--
+-- 转存表中的数据 `numorder`
+--
+
+INSERT INTO `numorder` (`id`, `number`) VALUES
+(1, 'A'),
+(2, 'B'),
+(3, 'C'),
+(4, 'D'),
+(5, 'E'),
+(6, 'F');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `people`
+--
+
+CREATE TABLE IF NOT EXISTS `people` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `nid` int(12) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `sign` varchar(255) DEFAULT NULL,
+  `act` varchar(255) DEFAULT NULL,
+  `message` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+--
+-- 转存表中的数据 `people`
+--
+
+INSERT INTO `people` (`id`, `nid`, `name`, `pic`, `sign`, `act`, `message`) VALUES
+(1, 1, '安维辰', '/date/public/img/list_lt_1.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(2, 1, '安芷汐', '/date/public/img/list_lt_2.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(3, 2, '白舒苒', '/date/public/img/list_lt_3.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(4, 2, '白木子', '/date/public/img/list_lt_5.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(5, 3, '楚安安', '/date/public/img/list_lt_3.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭'),
+(6, 3, '楚清卓', '/date/public/img/list_lt_3.jpg', '最爱的人是你', '你们两天前有过一次活动', '晚上有没有时间，一起吃个饭');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `register`
+--
+
+CREATE TABLE IF NOT EXISTS `register` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `phone` varchar(255) DEFAULT NULL,
+  `code` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `password_one` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=43 ;
+
+--
+-- 转存表中的数据 `register`
+--
+
+INSERT INTO `register` (`id`, `phone`, `code`, `password`, `password_one`) VALUES
+(1, '18303473646', '1234', 'wangshiyu', 'wangshiyu'),
+(2, '18649385257', '1', 'w454545', 'w454545'),
+(26, '12345678911', '', 'q123456789', 'q123456789'),
+(27, '12345678911', '', 'q123456789', 'q123456789'),
+(28, '12345678911', '', 'q123456789', 'q123456789'),
+(29, '12345678911', '', 'q123456789', 'q123456789'),
+(30, '12345678911', '', 'q123456789', 'q123456789'),
+(31, '12345678911', '', 'q123456789', 'q123456789'),
+(32, '12345678911', '', 'q123456789', 'q123456789'),
+(33, '12345678911', '', 'q123456789', 'q123456789'),
+(34, '12345678911', '', 'q123456789', 'q123456789'),
+(35, '12345678911', '', 'q123456', 'q123456'),
+(36, '12345678911', '', 'q1123456', 'q1123456'),
+(37, '12345678911', '', 'q123456', 'q123456'),
+(38, '12345678911', '', 'q123456', 'q123456'),
+(39, '12345678911', '', 'q123456', 'q123456'),
+(40, '17635263356', '', 'q123456', 'q123456'),
+(41, '12345678911', '1234', 'l12345', 'l12345'),
+(42, '18353762038', '1212', 'li1234567', 'li1234567');

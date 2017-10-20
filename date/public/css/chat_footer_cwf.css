@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 100%;
+  height: 1.0rem;
+  background: #FFf;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+footer > .foot {
+  position: relative;
+}
+footer > .foot > .search {
+  z-index: 1000000;
+  background: #fff;
+  width: 100%;
+  height: 0.90rem;
+  border-radius: 30rem;
+  box-shadow: 0 0 0.2rem #e6e6e6;
+  position: relative;
+}
+footer > .foot > .search::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+footer > .foot > .search > input {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 4.7rem;
+  left: 0.3rem;
+}
+footer > .foot > .search > ::-webkit-input-placeholder {
+  color: #e7e7e7;
+}
+footer > .foot > .search > a > img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+footer > .foot > .search > a > img.three {
+  width: auto;
+  height: 0.5rem;
+  right: 2rem;
+}
+footer > .foot > .search > a > img.one {
+  width: 0.9rem;
+  height: auto;
+  right: 0.9rem;
+}
+footer > .foot > .search > a > img.two {
+  width: 0.9rem;
+  height: auto;
+  right: 0;
+}
+footer > .foot > .choose {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -0.98rem;
+  width: 6.54rem;
+  height: 1.48rem;
+  background: #FFDC17;
+  border-radius: 0.6rem;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+}
+footer > .foot > .choose > a > img {
+  width: auto;
+  height: 0.6rem;
+  margin-bottom: 0.25rem;
+}
+footer > .foot > .hid {
+  display: none;
+}
+
+/*# sourceMappingURL=chat_footer_cwf.css.map */

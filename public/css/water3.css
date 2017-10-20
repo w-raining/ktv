@@ -1,0 +1,81 @@
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+html, body {
+    background: #F5F3FF;
+    overflow: scroll;
+}
+
+header {
+    width: 100%;
+    height: 2.74rem;
+    background: url("/public/img/water1/c1.png") center center no-repeat;
+    background-size: cover;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .box {
+    width: 100%;
+    padding: 0 .24rem;
+    height: auto;
+    display:-webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: -.5rem;
+}
+
+header .box a {
+    width: .38rem;
+    height: .38rem;
+    background: url("/public/img/singer1/singer7.png") center center no-repeat;
+    background-size: contain;
+}
+
+header .box p {
+    width: 100%;
+    height: auto;
+    font-size: .28rem;
+    color:#fff;
+    text-align: center;
+    padding: 0  .4rem 0 0 ;
+}
+section{
+    width:100%;
+    height:100%;
+}
+section .top{
+    width: 3.7rem;
+    height: 3.6rem;
+    background: url("/public/img/water1/c2.png") center center no-repeat;
+    background-size: contain;
+    margin:0 auto;
+    margin-top:.5rem;
+}
+section .center{
+    width: 3.58rem;
+    height: .86rem;
+    background: url("/public/img/water1/c3.png") center center no-repeat;
+    background-size:contain;
+    margin:.2rem auto;
+
+}
+section .bottom{
+    width: 5.86rem;
+    height: 1.08rem;
+    background: url("/public/img/water1/c4.png") center center no-repeat;
+    background-size: contain;
+    margin:.9rem auto;
+
+}

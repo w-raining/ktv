@@ -1,0 +1,287 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+body, html {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+* {
+  font-family: "苹方 中等";
+}
+
+.header {
+  width: 100%;
+  height: 0.88rem;
+  position: relative;
+  background: #FFDC17;
+  padding: 0 .24rem;
+  display: flex;
+}
+
+.header a {
+  width: 0.22rem;
+  height: 0.88rem;
+  display: block;
+}
+
+.header a .sign {
+  width: 0.22rem;
+  height: 0.36rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("/date/public/img/dyna_ry_1.png") center center no-repeat;
+  background-size: cover;
+}
+
+.header h2 {
+  width: 1rem;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  font-size: 0.34rem;
+  color: #372D23;
+  text-align: center;
+  line-height: 0.88rem;
+}
+
+.back {
+  width: 100%;
+  height: calc(100% - 0.88rem);
+  background: #f7f7f7;
+  position: absolute;
+  top: .88rem;
+}
+
+.back ul.contain {
+  width: 100%;
+  height: auto;
+}
+
+.back ul.contain li {
+  width: 100%;
+  height: 0.88rem;
+  margin-top: .24rem;
+  background: #FFFFFF;
+  padding: 0 .24rem;
+}
+
+.item {
+  display: flex;
+  position: relative;
+}
+
+.item .left {
+  width: 0.39rem;
+  height: 0.45rem;
+  background: url("/date/public/img/ryset1.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.item .descript {
+  width: 1.7rem;
+  height: 100%;
+  font-size: 0.3rem;
+  color: #372D23;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: .89rem;
+  line-height: .88rem;
+  font-weight: normal;
+}
+
+.item .right {
+  width: 0.6rem;
+  height: 0.23rem;
+  background: #484848;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: .9rem;
+  border-radius: .2rem;
+  overflow: hidden;
+  transition: all .5s ease;
+  display: flex;
+}
+
+.item .right .act {
+  width: 50%;
+  height: 100%;
+  background: #FFDC17;
+  position: absolute;
+  left: 0;
+  border-radius: .2rem;
+  display: none;
+}
+
+.item .right .act1 {
+  width: 50%;
+  height: 100%;
+  background: #FFDC17;
+  position: absolute;
+  border-radius: .2rem;
+  right: 0;
+  display: none;
+}
+
+.item .right .act.active {
+  display: block;
+}
+
+.item .right .act1.active {
+  display: block;
+}
+
+.item:nth-child(2) .left {
+  width: 0.37rem;
+  height: 0.44rem;
+  background: url("/date/public/img/ryset2.png") center center no-repeat;
+  background-size: cover;
+}
+
+.item:nth-child(3) .left, .item:nth-child(4) .left {
+  width: 0.35rem;
+  height: 0.41rem;
+  background: url("/date/public/img/ryset3.png") center center no-repeat;
+  background-size: cover;
+}
+
+.item:nth-child(4) .left {
+  width: 0.41rem;
+  height: 0.5rem;
+  background: url("/date/public/img/ryset4.png") center center no-repeat;
+  background-size: cover;
+}
+
+.item:nth-child(5) .left {
+  width: 0.44rem;
+  height: 0.44rem;
+  background: url("/date/public/img/ryset5.png") center center no-repeat;
+  background-size: cover;
+}
+
+.item:nth-child(6) .left {
+  width: 0.48rem;
+  height: 0.48rem;
+  background: url("/date/public/img/ryset6.png") center center no-repeat;
+  background-size: cover;
+}
+
+.alert {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all .3s ease;
+  transform: scale(0, 0);
+}
+
+.footer {
+  width: 7.26rem;
+  height: 5.08rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: .3rem;
+  background: url("/date/public/img/ryset8.png") center center no-repeat;
+  background-size: cover;
+}
+
+.footer div {
+  width: 4.64rem;
+  height: 0.97rem;
+  background: #D01203;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: .38rem;
+  text-align: center;
+  line-height: .97rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: .5rem;
+}
+
+.footer .sure {
+  bottom: 1.8rem;
+}
+
+.footer .cancel {
+  bottom: .6rem;
+}
+
+.alert.active {
+  transform: scale(1, 1);
+}

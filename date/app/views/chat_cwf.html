@@ -1,0 +1,111 @@
+
+<?php include VIEW_PATH.'chat_header_cwf.html'?>
+<link rel="stylesheet" href="<?php echo CSS_PATH.'chat_cwf.css'?>">
+<link rel="stylesheet" href="<?php echo CSS_PATH.'hong.css'?>">
+<div class="content">
+    <ul>
+        <li>
+            <div class="right">
+                <div class="time">08:39</div>
+                <div class="bg"></div>
+                <div class="head"><img src="<?php echo IMG_PATH.'chat_cwf7.png'?>" alt=""></div>
+                <p>哈喽</p>
+
+            </div>
+        </li>
+        <li>
+            <div class="left">
+                <div class="time">08:39</div>
+                <div class="bg"><img src="<?php echo $data['pic'];?>" alt=""></div>
+                <div class="head">1'23''</div>
+                <p><img src="<?php echo IMG_PATH.'chat_cwf4.png'?>" alt=""></p>
+            </div>
+        </li>
+        <li>
+            <div class="left">
+                <div class="time">08:39</div>
+                <div class="bg"><img src="<?php echo $data['pic'];?>" alt=""></div>
+                <div class="head">1'78''</div>
+                <p><img src="<?php echo IMG_PATH.'chat_cwf5.png'?>" alt=""></p>
+            </div>
+        </li>
+        <li class="imgs">
+            <div class="right-imgs">
+                <div class="time">08:39</div>
+                <div class="head"><img src="<?php echo IMG_PATH.'chat_cwf7.png'?>" alt=""></div>
+                <div class="imgs-bg">
+                    <img src="<?php echo IMG_PATH.'chat_cwf6.png'?>" alt="">
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="left">
+                <div class="time">08:39</div>
+                <div class="bg"><img src="<?php echo $data['pic'];?>" alt=""></div>
+                <div class="head"><img src="<?php echo IMG_PATH.'chat_cwf9.png'?>" alt=""></div>
+                <p class="xiao"><img src="<?php echo IMG_PATH.'chat_cwf9.png'?>" alt=""></p>
+            </div>
+        </li>
+
+
+
+
+    </ul>
+</div>
+<div class="zhao ">
+    <div class="bg" style="background: url('<?php echo IMG_PATH.'chat_cwf14.png'?>') center/cover no-repeat; ">
+        <h1>发红包</h1>
+        <div class="one">
+            <input type="text" class="display" value="￥0.00" readonly="readonly">
+        </div>
+        <div class="two">
+            <span>金额</span><input class="pays" type="text" placeholder="￥0.00"><span>元</span>
+        </div>
+        <div class="three">
+            <input type="text" value="祝万事如意心想事成">
+        </div>
+        <div class="four">
+            <span>递出红包</span>
+        </div>
+        <img src="<?php echo IMG_PATH.'chat_cwf15.png'?>" alt="" class="del">
+    </div>
+    <div class="back">
+        <div class="box">
+            <div class="left"></div>
+            <div class="z">支付</div>
+            <div class="right"></div>
+        </div>
+        <div class="key">
+            <div class="top1"></div>
+            <div class="top">
+                <div class="we">￥<span>100.00</span></div>
+            </div>
+
+            <!--轮播-->
+            <div class="container conhide">
+                <div id="slide" class="slide" class="index-slide" alt="star">
+                    <!-- 轮播图片数量可自行增减 -->
+                    <div class="img" style="background-image: url(/date/public/img/cbc-hong4.png)"></div>
+                    <div class="img" style="background-image: url(/date/public/img/cbc-hong4.png)"></div>
+                    <div class="img" style="background-image: url(/date/public/img/cbc-hong4.png)"></div>
+                    <div class="slide-bt"></div>
+                </div>
+            </div>
+            <div class="zhiwen">
+                <p>通过指纹识别完整支付</p>
+                <img src="<?php echo IMG_PATH.'chat_cwf17.png'?>" alt="">
+            </div>
+            <div class="bottom">确认支付</div>
+
+        </div>
+    </div>
+    <div class="load">
+        <img src="<?php echo IMG_PATH.'chat_cwf19.png' ?>" alt="">
+        <p>支付完成</p>
+    </div>
+
+
+
+
+</div>
+<?php include VIEW_PATH.'chat_footer_cwf.html'?>

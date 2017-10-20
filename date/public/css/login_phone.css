@@ -1,0 +1,360 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html #er, body #er {
+  width: 7.04rem;
+  height: 0.88rem;
+  background-image: url("../img/login_error_03.png");
+  background-size: cover;
+  position: absolute;
+  top: 0.1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+html #su, body #su {
+  width: 3.48rem;
+  height: 2.07rem;
+  background-image: url("../img/login_success03.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+html .login_back, body .login_back {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.24rem;
+  background-image: url("../img/login_back_02.png");
+  background-size: cover;
+  position: relative;
+}
+
+html .login_back .login_logo, body .login_back .login_logo {
+  width: 100%;
+  height: 6.96rem;
+  padding-top: 2.11rem;
+}
+
+html .login_back .login_logo .login_logo_son, body .login_back .login_logo .login_logo_son {
+  width: 5.37rem;
+  height: 2.76rem;
+  margin: 0 auto;
+}
+
+html .login_back .login_logo .login_logo_son img, body .login_back .login_logo .login_logo_son img {
+  width: 100%;
+}
+
+html .login_back .login_register, body .login_back .login_register {
+  width: 5.5rem;
+  height: 2.67rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+html .login_back .login_register .login_login, body .login_back .login_register .login_login {
+  width: 100%;
+  height: 1rem;
+  border-radius: 0.45rem;
+  background-image: url("../img/login_back_07.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+html .login_back .login_register .login_login a, body .login_back .login_register .login_login a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 1rem;
+  color: #000;
+  font-size: 0.38rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+html .login_back .login_register .login_enroll, body .login_back .login_register .login_enroll {
+  background-image: url("../img/login_back_06.png");
+  background-size: cover;
+  position: absolute;
+  top: 1.68rem;
+}
+
+html .login_back .login_line, body .login_back .login_line {
+  width: 4rem;
+  height: 0.3rem;
+  background-image: url("../img/login_back_03.png");
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 0.6rem;
+}
+
+html .login_back .login_thirdparty, body .login_back .login_thirdparty {
+  width: 5.15rem;
+  height: 1rem;
+  margin: 0 auto;
+  margin-top: 0.4rem;
+}
+
+html .login_back .login_thirdparty .login_thirdparty_son, body .login_back .login_thirdparty .login_thirdparty_son {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+html .login_back .login_thirdparty .login_thirdparty_son li, body .login_back .login_thirdparty .login_thirdparty_son li {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+html .login_back .login_thirdparty .login_thirdparty_son li a, body .login_back .login_thirdparty .login_thirdparty_son li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/login_back_08.png");
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+html .login_back .login_thirdparty .login_thirdparty_son li:nth-child(2) a, body .login_back .login_thirdparty .login_thirdparty_son li:nth-child(2) a {
+  background-image: url("../img/login_back_13.png");
+}
+
+html .login_back .login_thirdparty .login_thirdparty_son li:nth-child(3) a, body .login_back .login_thirdparty .login_thirdparty_son li:nth-child(3) a {
+  background-image: url("../img/login_back_10.png");
+}
+
+html .login_back .login_input, body .login_back .login_input {
+  width: 100%;
+  height: 8.9rem;
+  background-image: url("../img/login_back_01.png");
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+}
+
+html .login_back .login_input .login_down, body .login_back .login_input .login_down {
+  width: 0.6rem;
+  height: 0.35rem;
+  background-image: url("../img/login_back_12.png");
+  background-size: cover;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.52rem;
+}
+
+html .login_back .login_input .login_info, body .login_back .login_input .login_info {
+  width: 7.02rem;
+  height: 6.36rem;
+  margin: 0 auto;
+  margin-top: 1.33rem;
+  position: relative;
+}
+
+html .login_back .login_input .login_info .login_info_son, body .login_back .login_input .login_info .login_info_son {
+  width: 7.02rem;
+  height: 2.65rem;
+  position: relative;
+}
+
+html .login_back .login_input .login_info .login_info_son .login_info_put, body .login_back .login_input .login_info .login_info_son .login_info_put {
+  width: 100%;
+  height: 1rem;
+  background-image: url("../img/login_back_11.png");
+  background-size: cover;
+  border: none;
+  border-radius: 0.45rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+html .login_back .login_input .login_info .login_info_son .login_info_put .login_put_left, body .login_back .login_input .login_info .login_info_son .login_info_put .login_put_left {
+  width: 2rem;
+  height: 100%;
+  line-height: 1rem;
+  color: #000;
+  font-size: 0.12rem;
+  padding-left: 0.44rem;
+}
+
+html .login_back .login_input .login_info .login_info_son .login_info_put input, body .login_back .login_input .login_info .login_info_son .login_info_put input {
+  outline: none;
+  background: none;
+  border: none;
+  width: 5.02rem;
+  height: 100%;
+}
+
+html .login_back .login_input .login_info .login_info_son .login_password, body .login_back .login_input .login_info .login_info_son .login_password {
+  top: 1.67rem;
+}
+
+html .login_back .login_input .login_info .login_info_self, body .login_back .login_input .login_info .login_info_self {
+  width: 100%;
+  height: 0.3rem;
+  margin-top: 0.5rem;
+  padding-left: 0.48rem;
+  padding-right: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+html .login_back .login_input .login_info .login_info_self .login_self_left, body .login_back .login_input .login_info .login_info_self .login_self_left {
+  height: 100%;
+  display: flex;
+}
+
+html .login_back .login_input .login_info .login_info_self .login_self_left input, body .login_back .login_input .login_info .login_info_self .login_self_left input {
+  width: 0.3rem;
+  height: 0.3rem;
+  margin-right: 0.15rem;
+}
+
+html .login_back .login_input .login_info .login_info_self .login_self_left a, body .login_back .login_input .login_info .login_info_self .login_self_left a {
+  display: block;
+  height: 100%;
+  font-size: 0.24rem;
+  color: #00CFFD;
+}
+
+html .login_back .login_input .login_info .login_info_self .login_self_right, body .login_back .login_input .login_info .login_info_self .login_self_right {
+  height: 100%;
+}
+
+html .login_back .login_input .login_info .login_info_self .login_self_right a, body .login_back .login_input .login_info .login_info_self .login_self_right a {
+  display: block;
+  height: 100%;
+  font-size: 0.24rem;
+  color: #00CFFD;
+}
+
+html .login_back .login_input .login_info .login_info_btn, body .login_back .login_input .login_info .login_info_btn {
+  width: 5.52rem;
+  height: 1rem;
+  margin: 0 auto;
+  margin-top: 0.75rem;
+  background-image: url("../img/login_back_07.png");
+  background-size: cover;
+  border-radius: 0.45rem;
+  position: relative;
+}
+
+html .login_back .login_input .login_info .login_info_btn button, body .login_back .login_input .login_info .login_info_btn button {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.45rem;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 0.35rem;
+  line-height: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+html .login_back .login_input .login_info .login_info_btn button.active, body .login_back .login_input .login_info .login_info_btn button.active {
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease;
+}
+
+html .login_back .login_input .login_info .login_info_btn.translet, body .login_back .login_input .login_info .login_info_btn.translet {
+  transform: scale(0.9);
+  transition: all .3s ease;
+}
+
+html .login_back .login_input .login_info .login_phone_info, body .login_back .login_input .login_info .login_phone_info {
+  width: 100%;
+  height: 0.3rem;
+  margin-top: 0.89rem;
+}
+
+html .login_back .login_input .login_info .login_phone_info a, body .login_back .login_input .login_info .login_phone_info a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 0.3rem;
+  font-size: 0.24rem;
+  color: #00CFFD;
+}

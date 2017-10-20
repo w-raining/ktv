@@ -1,0 +1,330 @@
+<title>筛选</title>
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="wap-font-scale" content="no">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH.'yao2.css';?>">
+<link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH.'yao1.css';?>">
+<link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH.'yao.css';?>">
+<script src="<?php echo JS_PATH.'yao.js';?>" type="text/javascript"></script>
+<div class="box1">
+    <div class="bao">
+        <div class="top">
+            <div class="left">邀请</div>
+            <div class="right"></div>
+            <div class="z"></div>
+        </div>
+        <div class="contain key">
+            <div class="demo">
+                <div id="trigger1">吃饭</div>
+                <div id="trigger2" style="display: none"></div>
+                <div id="trigger3" style="display: none">多项选择</div>
+                <div id="trigger4">今天14:00</div>
+                <div id="trigger5" style="background-image: url(/date/public/img/cbc-yao4.png)">太原小店区长风街世贸中心口味虾</div>
+                <input type="text" class="liu" placeholder="输入附言">
+                <div id="fin">发起邀请</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+
+    $('.gender li').on('click', function () {
+        $('.gender li').removeClass('active');
+        $(this).addClass('active')
+    })
+
+    var weekdayArr = ['吃饭', '逛街', '旅游'];
+    var timeArr = ['&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;28'];
+    var numArr = ['1', '2', '3', '4', '5'];
+
+    var UplinkData =
+        [
+            {
+                id: '2',
+                value: '山西',
+                childs: [
+                    {
+                        id: '1',
+                        value: '&nbsp;&nbsp;&nbsp;太原',
+                        childs: [
+                            {
+                                id: '1',
+                                value: '&nbsp;&nbsp;&nbsp;小店区'
+                            },
+                            {
+                                id: '2',
+                                value: '&nbsp;&nbsp;&nbsp;万柏林区'
+                            },
+                            {
+                                id: '3',
+                                value: '&nbsp;&nbsp;&nbsp;尖草坪区'
+                            },
+                            {
+                                id: '4',
+                                value: '&nbsp;&nbsp;&nbsp;迎泽区'
+                            },
+                            {
+                                id: '5',
+                                value: '&nbsp;&nbsp;&nbsp;杏花岭区'
+                            }
+                        ]
+                    },
+                    {
+                        id: '2',
+                        value: '&nbsp;&nbsp;&nbsp;临汾',
+                        childs: [
+                            {
+                                id: '1',
+                                value: '&nbsp;&nbsp;&nbsp;尧都区'
+                            },
+                            {
+                                id: '2',
+                                value: '&nbsp;&nbsp;&nbsp;侯马市'
+                            },
+                            {
+                                id: '3',
+                                value: '&nbsp;&nbsp;&nbsp;襄汾县'
+                            },
+                            {
+                                id: '4',
+                                value: '&nbsp;&nbsp;&nbsp;曲沃县'
+                            },
+                            {
+                                id: '5',
+                                value: '&nbsp;&nbsp;&nbsp;翼城县'
+                            }
+                        ]
+                    },
+                    {
+                        id: '3',
+                        value: '&nbsp;&nbsp;&nbsp;运城',
+                        childs: [
+                            {
+                                id: '1',
+                                value: '&nbsp;&nbsp;&nbsp;盐湖区'
+                            },
+                            {
+                                id: '2',
+                                value: '&nbsp;&nbsp;&nbsp;绛县'
+                            },
+                            {
+                                id: '3',
+                                value: '&nbsp;&nbsp;&nbsp;夏县'
+                            },
+                            {
+                                id: '4',
+                                value: '&nbsp;&nbsp;&nbsp;新绛县'
+                            }
+                        ]
+                    },
+                    {
+                        id: '4',
+                        value: '&nbsp;&nbsp;&nbsp;阳泉',
+                        childs: [
+                            {
+                                id: '1',
+                                value: '&nbsp;&nbsp;&nbsp;矿区'
+                            },
+                            {
+                                id: '2',
+                                value: '&nbsp;&nbsp;&nbsp;城区'
+                            }
+                        ]
+                    }
+                ]
+            }
+        ];
+
+
+    //----------------------------------------------------------
+
+    //只有trigger 和 wheels 是必要参数  其他都是选填参数
+    var mobileSelect1 = new MobileSelect({
+        trigger: '#trigger1',
+        title: '事件',
+        wheels: [
+            {data: weekdayArr}
+        ],
+        position: [2] //初始化定位 打开时默认选中的哪个  如果不填默认为0
+    });
+
+
+    var mobileSelect2 = new MobileSelect({
+        trigger: '#trigger2',
+        title: '年龄',
+        wheels: [
+            {data: weekdayArr},
+            {data: timeArr}
+        ],
+        position: [1, 2]
+    });
+
+
+    var mobileSelect3 = new MobileSelect({
+        trigger: '#trigger3',
+        title: '多项选择',
+        wheels: [
+            {data: numArr},
+            {data: numArr},
+            {data: numArr},
+            {data: numArr},
+            {data: numArr}
+        ],
+        position: [0, 1, 0, 1, 0],
+        transitionEnd: function (indexArr, data) {
+        },
+        callback: function (indexArr, data) {
+        }
+    });
+
+
+    var mobileSelect4 = new MobileSelect({
+        trigger: '#trigger4',
+        title: '时间',
+        wheels: [
+            {
+                data: [
+                    {
+                        id: '1',
+                        value: '今天',
+                        childs: [
+                            {id: '1', value: '8:00'},
+                            {id: '2', value: '9:00'},
+                            {id: '3', value: '10:00'},
+                            {id: '4', value: '11:00'},
+                            {id: '5', value: '12:00'},
+                            {id: '6', value: '13:00'},
+                            {id: '7', value: '14:00'},
+                            {id: '8', value: '15:00'},
+                            {id: '9', value: '16:00'},
+                            {id: '10', value: '17:00'},
+                            {id: '11', value: '18:00'},
+                            {id: '11', value: '19:00'},
+                            {id: '11', value: '20:00'},
+                            {id: '11', value: '21:00'},
+                            {id: '11', value: '22:00'},
+                            {id: '11', value: '23:00'}
+                        ]
+                    },
+                    {
+                        id: '2',
+                        value: '明天',
+                        childs: [
+                            {id: '1', value: '8:00'},
+                            {id: '2', value: '9:00'},
+                            {id: '3', value: '10:00'},
+                            {id: '4', value: '11:00'},
+                            {id: '5', value: '12:00'},
+                            {id: '6', value: '13:00'},
+                            {id: '7', value: '14:00'},
+                            {id: '8', value: '15:00'},
+                            {id: '9', value: '16:00'},
+                            {id: '10', value: '17:00'},
+                            {id: '11', value: '18:00'},
+                            {id: '11', value: '19:00'},
+                            {id: '11', value: '20:00'},
+                            {id: '11', value: '21:00'},
+                            {id: '11', value: '22:00'},
+                            {id: '11', value: '23:00'}
+                        ]
+                    },
+                    {
+                        id: '3',
+                        value: '后天',
+                        childs: [
+                            {id: '1', value: '8:00'},
+                            {id: '2', value: '9:00'},
+                            {id: '3', value: '10:00'},
+                            {id: '4', value: '11:00'},
+                            {id: '5', value: '12:00'},
+                            {id: '6', value: '13:00'},
+                            {id: '7', value: '14:00'},
+                            {id: '8', value: '15:00'},
+                            {id: '9', value: '16:00'},
+                            {id: '10', value: '17:00'},
+                            {id: '11', value: '18:00'},
+                            {id: '11', value: '19:00'},
+                            {id: '11', value: '20:00'},
+                            {id: '11', value: '21:00'},
+                            {id: '11', value: '22:00'},
+                            {id: '11', value: '23:00'}
+                        ]
+                    },
+                    {
+                        id: '4',
+                        value: '周六',
+                        childs: [
+                            {id: '1', value: '8:00'},
+                            {id: '2', value: '9:00'},
+                            {id: '3', value: '10:00'},
+                            {id: '4', value: '11:00'},
+                            {id: '5', value: '12:00'},
+                            {id: '6', value: '13:00'},
+                            {id: '7', value: '14:00'},
+                            {id: '8', value: '15:00'},
+                            {id: '9', value: '16:00'},
+                            {id: '10', value: '17:00'},
+                            {id: '11', value: '18:00'},
+                            {id: '11', value: '19:00'},
+                            {id: '11', value: '20:00'},
+                            {id: '11', value: '21:00'},
+                            {id: '11', value: '22:00'},
+                            {id: '11', value: '23:00'}
+                        ]
+                    },
+                    {
+                        id: '5',
+                        value: '周日',
+                        childs: [
+                            {id: '1', value: '8:00'},
+                            {id: '2', value: '9:00'},
+                            {id: '3', value: '10:00'},
+                            {id: '4', value: '11:00'},
+                            {id: '5', value: '12:00'},
+                            {id: '6', value: '13:00'},
+                            {id: '7', value: '14:00'},
+                            {id: '8', value: '15:00'},
+                            {id: '9', value: '16:00'},
+                            {id: '10', value: '17:00'},
+                            {id: '11', value: '18:00'},
+                            {id: '11', value: '19:00'},
+                            {id: '11', value: '20:00'},
+                            {id: '11', value: '21:00'},
+                            {id: '11', value: '22:00'},
+                            {id: '11', value: '23:00'}
+                        ]
+                    }
+                ]
+            }
+        ],
+        transitionEnd: function (indexArr, data) {
+            console.log(data);
+        },
+        callback: function (indexArr, data) {
+            console.log(data);
+        }
+    });
+
+
+    var mobileSelect5 = new MobileSelect({
+        trigger: '#trigger5',
+        title: '地点',
+        wheels: [
+            {data: UplinkData}
+        ],
+        transitionEnd: function (indexArr, data) {
+            console.log(data);
+        },
+        callback: function (indexArr, data) {
+            console.log(data);
+        }
+    });
+
+
+</script>
+

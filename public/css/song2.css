@@ -1,0 +1,186 @@
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: '苹方';
+}
+a{
+    text-decoration: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    position: relative;
+    background: #fff;
+
+}
+
+.ban {
+    width: 100%;
+    height: 4.65rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: url("/public/img/singer1/song-ban1.png") center center no-repeat;
+    background-size: cover;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+}
+
+.ban .con {
+    width: 100%;
+    padding: 0 0.24rem 0.24rem .24rem;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.ban .top {
+    width: 100%;
+    height: .4rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin-top: .26rem;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.ban .back {
+    display: block;
+    width: .4rem;
+    height: .4rem;
+    background: url("/public/img/singer1/singer7.png") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.ban .top > p {
+    width: .82rem;
+    text-align: center;
+    color: #fff;
+    font-size: .36rem;
+    margin: 0 auto;
+}
+.ban .top .yi{
+    display: inline-flex;
+    width:1rem;;
+    height:.4rem;
+    border: 1px solid #fff;
+    color:#fff;
+    text-align: center;
+    line-height: .4rem;
+    font-size: .24rem;
+    border-radius: .1rem;
+    position: absolute;
+    right: 0;
+    font-weight: 600;
+}
+
+.ban .top_two {
+    width: 5.5rem;
+    height: .35rem;
+    margin: .22rem auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.ban .top_two .logo {
+    width: .3rem;
+    height: .3rem;
+    background: url("/public/img/singer1/singer8.png") center center no-repeat;
+    background-size: cover;
+}
+
+.ban .top_two > li {
+    width: 25%;
+    height: auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.ban .top_two > li > a {
+    width: 100%;
+    display: block;
+    height: auto;
+    font-size: .24rem;
+    color: #fff;
+}
+
+.ban .inputs {
+    width: 100%;
+    height: .7rem;
+    background: #fff;
+    border-radius: 4px;
+    border: 0;
+    position: relative;
+}
+
+.ban .inputs input {
+    width: 100%;
+    height: auto;
+    border: 0;
+    outline: none;
+    position: absolute;
+    top: .2rem;
+    left: 0;
+    text-align: center;
+    font-size: .24rem;
+}
+
+.ban .inputs .search {
+    width: .36rem;
+    height: .36rem;
+    position: absolute;
+    top: .17rem;
+    left: 1.35rem;
+    background: url("/public/img/singer1/singer9.png") center center no-repeat;
+    background-size: cover;
+}
+.ph{
+    width: 100%;
+    padding: 0 0.24rem 0 .24rem;
+    height: 5rem;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-top: -2.2rem;
+    position: relative;
+    z-index:10;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ph>li {
+    width: 33.3%;
+    height: 2.95rem;
+    border-radius: .07rem;
+}
+.ph>li>a{
+    display: block;
+    width: 90%;
+    height: 85%;
+    border-radius: .07rem;
+
+}
+.ph>li>a>img{
+    width:100%;
+    height: 100%;
+    border-radius: .07rem;
+
+}
+.ph>li>h4{
+    color:#575861;
+    font-size: .24rem;
+    line-height: .42rem;
+}

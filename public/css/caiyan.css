@@ -1,0 +1,224 @@
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: '苹方';
+}
+
+body, html {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #fff;
+    overflow: scroll;
+}
+
+.ban {
+    width: 100%;
+    height: 3.8rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+}
+.ban .bei{
+    width: 100%;
+    height: 3.8rem;
+    position: absolute;
+    top:0;
+    left:0;
+    background: url('/public/img/caiyan/back.png') center center no-repeat;
+    background-size: cover;
+}
+
+.ban .con {
+    width: 100%;
+    padding: 0 0.24rem 0.24rem .24rem;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.ban .top {
+    width: 100%;
+    height: .88rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.ban .back {
+    display: block;
+    width: .4rem;
+    height: .4rem;
+    background:url("/public/img/singer1/singer7.png") center center no-repeat;
+    nckground-size: cover;
+    position: absolute;
+    z-index: 20;
+}
+
+.ban .top > p {
+    width: 2.4rem;
+    text-align: center;
+    color: #fff;
+    font-size: .36rem;
+    margin: 0 auto;
+    font-family: 'San Francisco Display';
+    font-weight: bold;
+
+}
+.ban .top .yi{
+    display: inline-flex;
+    width:1rem;;
+    height:.4rem;
+    border: 1px solid #fff;
+    color:#fff;
+    text-align: center;
+    line-height: .4rem;
+    font-size: .24rem;
+    border-radius: .1rem;
+    position: absolute;
+    right: 0;
+    font-weight: 600;
+    z-index: 50;
+}
+.ban .center {
+    width: 100%;
+    height: 1.83rem;
+    margin-top: .21rem;
+    position: relative;
+}
+
+.ban .center .left {
+    width: 1.48rem;
+    height: 1.48rem;
+    border-radius: .2rem;
+    margin-left: .05rem;
+    transform: rotate(8deg);
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+}
+
+.ban .center .left1 {
+    width: 1.48rem;
+    height: 1.48rem;
+    border-radius: .15rem;
+    padding: .02rem;
+    position: absolute;
+    top: 0;
+    left: .045rem;
+    z-index: 10;
+}
+
+.ban .center .right {
+    width: 3.6rem;
+    height: 1.79rem;
+    margin-left: 2.08rem;
+}
+
+.ban .center .right > p:nth-child(1) {
+    font-size: .26rem;
+    font-family: '[PingFangSC]';
+    color: #fff;
+}
+
+.ban .center .right > p:nth-child(2) {
+    margin-top: .15rem;
+    font-size: .24rem;
+    font-family: '[AdobeHeitiStd]';
+    color: #fff;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: nowrap;
+    line-height: .23rem;
+}
+
+.ban .center .right > p:nth-child(2) > span {
+    display: block;
+    width: .25rem;
+    height: .25rem;
+    border-radius: 50%;
+}
+
+.ban .center .right > p:nth-child(2) > span > img {
+    width: 100%;
+    height: 100%;
+}
+
+.ban .center .right > div {
+    width: 3.3rem;
+    height: .06rem;
+    background: url("/public/img/caiyan/c3.png") center center no-repeat;
+    background-size: contain;
+    margin-top: .3rem;
+}
+
+.ban .center .right > p:nth-child(4) {
+    font-size: .24rem;
+    font-family: '[PingFangSC]';
+    color: #fff;
+    margin-top: .2rem;
+}
+
+.song {
+    width: 100%;
+    padding: 0 0.24rem 0.24rem .24rem;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.song > li {
+    width: 100%;
+    height: 1.2rem;
+    border-song: 1px dashed #b7b7b7;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: .25rem 0;
+    position: relative;
+
+}
+
+.song > li > p:nth-child(1) {
+    width: .29rem;
+    height: .28rem;
+    color:#89919E;
+    font-size: .24rem;
+    font-family: "San Francisco Display";
+    font-weight: bold;
+}
+.song > li > p:nth-child(2){
+    width: 3.2rem;
+    height: .78rem;
+    color:#89919E;
+    font-size: .26rem;
+    margin-left: .17rem;
+}
+.song > li > p:nth-child(2)>span{
+    font-size: .24rem;
+    color: #898989;
+}
+.song > li > p:nth-child(3)>span{
+    font-size: .24rem;
+    color: #898989;
+}
+.song > li>div{
+    display: inline-flex;
+    width: .4rem;
+     height:.4rem;
+    border-radius: 50%;
+    position: absolute;
+    right:0;
+
+ }
+.song > li>div>img{
+    width: 100%;
+    height:100%;
+}

@@ -1,0 +1,279 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 2.22rem;
+  background: url("/public/img/water1/back.png") center center no-repeat;
+  background-size: cover;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header .box {
+  width: 3.1rem;
+  height: .7rem;
+  background: #fff;
+  border-radius: 0.6rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  font-size: .26rem;
+  color: #fff;
+}
+
+header .box span {
+  color: #545b72;
+}
+
+header .box .son {
+  width: 1.56rem;
+  height: .53rem;
+  border-radius: 0.6rem;
+  color: #545b72;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .box .son span {
+  color: #545b72;
+}
+
+header .box .son1 {
+  width: 1.56rem;
+  height: .53rem;
+  border-radius: 0.6rem;
+  color: #545b72;
+  position: relative;
+  z-index: 100;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .box .son1 span {
+  color: #545b72;
+}
+
+#change {
+  width: 1.56rem;
+  height: .53rem;
+  background: #ff318d;
+  border-radius: 0.6rem;
+  color: #fff;
+  position: absolute;
+}
+section .big.show {
+  display: block;
+}
+
+section .big {
+  display: none;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 0 .24rem;
+  background: #fff;
+}
+
+section .big {
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+section .big .box {
+  width: 100%;
+  height: 2.63rem;
+  border-bottom: .02rem solid #dcdcdc;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+section .big .box .left {
+  flex: .7;
+  height: 1.77rem;
+}
+
+section .big .box .left img {
+  width: 100%;
+  height: 100%;
+}
+
+section .big .box .right {
+  flex: .9;
+  height: 1.42rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section .big .box .right p {
+  width: 100%;
+  font-size: .26rem;
+  color: #575861;
+}
+
+section .big .box .right p span {
+  display: inline-flex;
+  width: .75rem;
+  height: .27rem;
+  background: url("/public/img/water1/water4.png") center center no-repeat;
+  background-size: contain;
+}
+
+section .big .box .right h1 {
+  width: 100%;
+  height: .37rem;
+  color: #ff318d;
+  font-size: .26rem;
+  text-align: left;
+}
+
+section .big .box .right .bottom {
+  width: 2rem;
+  height: .4rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+section .big .box .right .bottom .first {
+  width: .36rem;
+  height: .36rem;
+  border-radius: 50%;
+  margin-right: .3rem;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .big .box .right .bottom .first img {
+  width: 100%;
+  height: 100%;
+}
+
+section .big .box .right .bottom .second {
+  width: .8rem;
+  height: .36rem;
+  border: .03rem solid #d5d5d5;
+  border-radius: 1rem;
+  font-size: .26rem;
+  color: #858585;
+  text-align: center;
+  line-height: .34rem;
+  font-weight: bold;
+  margin-right: 0.3rem;
+}
+
+section .big .box .right .bottom .third {
+  width: .36rem;
+  height: .36rem;
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .big .box .right .bottom .third img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 0 .24rem;
+}
+
+footer .top {
+  width: 100%;
+  height: .6rem;
+  margin-top: .2rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+}
+
+footer .top .zi {
+  display: block;
+  width: 2rem;
+  height: .3rem;
+  font-size: .24rem;
+  color: #464545;
+  line-height: .2rem;
+}
+
+footer .top .con {
+  width: 500%;
+  height: .6rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+footer .top .con span {
+  color: #fff;
+  font-size: .24rem;
+}
+
+.bottom {
+  width: 100%;
+  height: auto;
+  padding: .2rem 0;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom p {
+  width: auto;
+  height: auto;
+  padding: .1rem 0;
+  color: #fe318e;
+  font-size: .28rem;
+}
+
+.bottom p span:nth-child(1) {
+  color: #fe318e;
+  font-size: .30rem;
+  font-weight: bold;
+  font-family: "Helvetica Neue LT Pro";
+}
+
+.bottom p span:nth-child(2) {
+  color: #fe318e;
+  font-size: .24rem;
+  font-weight: bold;
+  font-family: "Helvetica Neue LT Pro";
+}
+
+.bottom .right {
+  width: 2.4rem;
+  height: .86rem;
+  background: url("/public/img/water1/water8.png") center center no-repeat;
+  background-size: contain;
+}

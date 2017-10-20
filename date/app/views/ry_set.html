@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>set</title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH.'ry_set.css'?>">
+    <script src="<?php echo JS_PATH.'jquery.js'?>"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="/date/index.php/person/index"><div class="sign"></div></a>
+        <h2>设置</h2>
+    </div>
+    <div class="back">
+        <ul class="contain">
+            <li class="item">
+                <div class="left"></div>
+                <div class="descript">账号安全</div>
+                <div class="right">
+                    <div class="act active"></div>
+                    <div class="act1"></div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="left"></div>
+                <div class="descript">消息通知</div>
+            </li>
+            <li class="item">
+                <div class="left"></div>
+                <div class="descript">隐私</div>
+                <div class="right">
+                    <div class="act active"></div>
+                    <div class="act1"></div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="left"></div>
+                <div class="descript">清理空间</div>
+                <div class="right">
+                    <div class="act active"></div>
+                    <div class="act1"></div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="left"></div>
+                <div class="descript">帮助</div>
+            </li>
+            <li class="item">
+                <div class="left"></div>
+                <div class="descript off">退出账号</div>
+            </li>
+        </ul>
+        <div class="alert">
+            <div class="footer">
+                <div class="sure"><a href="/date/index.php/login/header" style="color:#fff">确认</a></div>
+                <div class="cancel">取消</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(function () {
+        var off=$('.descript.off');
+        off.on('click',function(){
+            $('.alert').addClass('active');
+        });
+        $('.cancel').on('click',function () {
+            $('.alert').removeClass('active');
+        });
+
+        $('.act').on('click',function(){
+            $(this).removeClass('active').eq($(this).index()).next().addClass('active');
+        });
+        $('.act1').on('click',function(){
+            $(this).removeClass('active').prev().addClass('active');
+        });
+    })
+</script>

@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+html {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+header {
+  width: 100%;
+  height: 0.88rem;
+  background: #FFDC17;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-right: 0.24rem;
+  padding-left: 0.24rem;
+  border: 0.001rem;
+  z-index: 10000;
+}
+header > nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+header > nav > a {
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+header > nav > a > img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+header > nav > h1 {
+  margin: auto;
+  font-size: 0.34rem;
+  color: #372D23;
+}
+
+/*# sourceMappingURL=chat_header_cwf.css.map */

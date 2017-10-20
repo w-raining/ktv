@@ -1,0 +1,518 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+body, html {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  font-family: "苹方 中等";
+}
+
+.header {
+  width: 100%;
+  height: 0.88rem;
+  position: relative;
+  background: #FFDC17;
+  padding: 0 .24rem;
+  display: flex;
+}
+
+.header a {
+  width: 0.22rem;
+  height: 0.88rem;
+  display: block;
+}
+
+.header a .sign {
+  width: 0.22rem;
+  height: 0.36rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("/date/public/img/dyna_ry_1.png") center center no-repeat;
+  background-size: cover;
+}
+
+.header h2 {
+  width: 1.5rem;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  font-size: 0.34rem;
+  color: #372D23;
+  text-align: center;
+  line-height: 0.88rem;
+}
+
+.back {
+  width: 100%;
+  height: 12.06rem;
+  background: #f7f7f7;
+}
+
+.back ul.contain {
+  width: 100%;
+  height: auto;
+}
+
+.back ul.contain li {
+  width: 100%;
+  height: 0.88rem;
+  margin-bottom: .225rem;
+  background: #FFFFFF;
+  padding: 0 .24rem;
+}
+
+ul.contain > li:nth-child(3) {
+  margin-bottom: .02rem;
+}
+
+ul.contain > li:nth-child(6) {
+  margin-bottom: .02rem;
+}
+
+.item {
+  display: flex;
+  position: relative;
+}
+
+.item .left {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url("/date/public/img/dyna_ry_2.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.item .descript {
+  width: 1.7rem;
+  height: 100%;
+  font-size: 0.3rem;
+  color: #372D23;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: .89rem;
+  line-height: .88rem;
+  font-weight: normal;
+}
+
+.item .con {
+  height: 100%;
+  position: absolute;
+  left: 2.6rem;
+  font-size: .3rem;
+  font-weight: normal;
+  color: #5ACCFC;
+  line-height: .88rem;
+}
+
+.item .con h2 {
+  float: left;
+  margin-left: .5rem;
+  font-size: .3rem;
+  font-weight: normal;
+}
+
+.item .right {
+  width: 0.34rem;
+  height: 0.2rem;
+  background: url("/date/public/img/dyna_ry_4.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: .24rem;
+}
+
+.item .right1 {
+  width: 0.34rem;
+  height: 0.34rem;
+  background: url("/date/public/img/dyna_ry_6.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: .24rem;
+}
+
+.item:nth-child(2) .left {
+  width: 0.41rem;
+  height: 0.4rem;
+  background: url("/date/public/img/dyna_ry_3.png") center center no-repeat;
+  background-size: cover;
+}
+
+.item:nth-child(3) .left, .item:nth-child(4) .left {
+  width: 0.28rem;
+  height: 0.4rem;
+  background: url("/date/public/img/dyna_ry_5.png") center center no-repeat;
+  background-size: cover;
+}
+
+.item:nth-child(5) .left {
+  width: 0.44rem;
+  height: 0.33rem;
+  background: url("/date/public/img/dyna_ry_7.png") center center no-repeat;
+  background-size: cover;
+}
+
+.item:nth-child(6) .left {
+  width: 0.41rem;
+  height: 0.4rem;
+  background: url("/date/public/img/dyna_ry_8.png") center center no-repeat;
+  background-size: cover;
+}
+
+.item:nth-child(7) .left {
+  width: 0.36rem;
+  height: 0.34rem;
+  background: url("/date/public/img/dyna_ry_9.png") center center no-repeat;
+  background-size: cover;
+}
+
+.person {
+  width: 2.98rem;
+  height: 0.6rem;
+  margin-top: .1rem;
+  background: #FFDC17;
+  border-radius: .5rem;
+  position: relative;
+  float: left;
+  display: flex;
+}
+
+.person .jian {
+  width: .26rem;
+  height: .05rem;
+  background: url("/date/public/img/dyna_ry_15.png") center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: .3rem;
+}
+
+.person .num {
+  width: 1.27rem;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #F7F7F7;
+  text-align: center;
+  line-height: .6rem;
+  color: #372D23;
+}
+
+.person .jia {
+  width: .26rem;
+  height: .27rem;
+  background: url("/date/public/img/dyna_ry_16.png") center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: .3rem;
+}
+
+.con .method {
+  width: 4.22rem;
+  height: .88rem;
+  display: flex;
+}
+
+.con .method .li {
+  width: 1.4rem;
+  height: .84rem;
+  border-radius: .1rem;
+  font-size: .3rem;
+  color: #5ACCFC;
+  line-height: .88rem;
+  text-align: center;
+  background: #EEEEEE;
+  font-weight: normal;
+  margin-right: .02rem;
+  padding: 0;
+}
+
+.con .method > li.active {
+  color: #372D23;
+  background: #FFDC17;
+}
+
+.bao {
+  width: 100%;
+  height: 4.08rem;
+  background: #fff;
+}
+
+.bao h3 {
+  width: 2.5rem;
+  height: .8rem;
+  font-size: .34rem;
+  color: #372D23;
+  text-align: center;
+  line-height: .8rem;
+  margin: 0 auto;
+}
+
+.bao .all {
+  width: 6.54rem;
+  height: 0.8rem;
+  margin: 0 auto;
+  display: flex;
+  border-radius: .5rem;
+  background: #F7F7F7;
+  overflow: hidden;
+  margin-bottom: .21rem;
+}
+
+.bao .all .on {
+  width: 2.18rem;
+  height: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .32rem;
+  font-weight: normal;
+  color: #372D23;
+  margin-right: 1px;
+}
+
+.bao .all .two {
+  width: 2.16rem;
+  height: 0.8rem;
+  border-left: 1px solid #E1E1E1;
+  border-right: 1px solid #E1E1E1;
+}
+
+.bao .all .two div {
+  width: .34rem;
+  height: .35rem;
+  background: url(/date/public/img/dyna_ry_11.png) center center no-repeat;
+  background-size: cover;
+}
+
+.bao .all .three div {
+  width: .34rem;
+  height: .35rem;
+  background: url(/date/public/img/dyna_ry_12.png) center center no-repeat;
+  background-size: cover;
+}
+
+.sex.active {
+  background: #FFDC17;
+}
+
+.sex {
+  width: .34rem;
+  height: .35rem;
+  background: url(/date/public/img/dyna_ry_11.png) center center no-repeat;
+  background-size: cover;
+}
+
+.sex1 {
+  width: .34rem;
+  height: .35rem;
+  background: url(/date/public/img/dyna_ry_12.png) center center no-repeat;
+  background-size: cover;
+}
+
+.age, .home {
+  width: 6.54rem;
+  height: 0.8rem;
+  background: #F7F7F7;
+  border-radius: .5rem;
+  margin: 0 auto;
+  margin-bottom: .21rem;
+  display: flex;
+}
+
+.age .l, .home .l {
+  width: 1.67rem;
+  height: 100%;
+  font-size: .32rem;
+  color: #372D23;
+  text-align: center;
+  line-height: .8rem;
+  font-weight: normal;
+}
+
+.age .con, .home .con {
+  width: 3.3rem;
+  height: 100%;
+  display: flex;
+}
+
+.age .con .li, .home .con .li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .32rem;
+  color: #5ACCFC;
+  font-weight: 500;
+}
+
+.age .r, .home .r {
+  width: 1.3rem;
+  height: 100%;
+  margin-left: .2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/date/public/img/dyna_ry_4.png") center center no-repeat;
+  background-size: .34rem .20rem;
+}
+
+.age .con .t {
+  color: black;
+}
+
+.alert {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all .3s ease;
+  transform: scale(0, 0);
+}
+
+.alert .info {
+  width: 7.05rem;
+  height: 4rem;
+  background: #372D23;
+  border-radius: .3rem;
+  position: absolute;
+  bottom: 1.53rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.alert .info .con {
+  width: 6.73rem;
+  height: 0.99rem;
+  background: #fff;
+  float: right;
+  border-bottom: 1px solid #FFDC17;
+  font-size: 0.36rem;
+  color: #372D23;
+  text-align: center;
+  line-height: 1rem;
+  font-weight: normal;
+}
+
+.alert.active {
+  transform: scale(1, 1);
+}
+
+.success {
+  width: 2.78rem;
+  height: 1.69rem;
+  background: #B7EB46;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: .3rem;
+  box-shadow: 0 0 6px #D3EAA1;
+  display: none;
+}
+
+.success a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 0.36rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.69rem;
+}
+
+.footer {
+  width: 100%;
+  height: 1.26rem;
+  background: url(/date/public/img/dyna_ry_17.png) center center no-repeat;
+  background-size: cover;
+  margin-top: -0.25rem;
+  display: block;
+  width: 100%;
+  height: 1.26rem;
+  font-size: .4rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.26rem;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>真心话 大冒险</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/public/css/game2.css">
+    <script src="/public/js/resize.js"></script>
+    <script src="/public/js/jquery-3.2.1.js"></script>
+</head>
+<style>
+    #alert .info .text {
+        width: 2rem;
+        height: auto;
+        font-size: .22rem;
+        margin-top: .6rem;
+    }
+    #alert .repeat{
+        width: 3rem;
+        height: .6rem;
+        position: absolute;
+        z-index: 50;
+        top:7.3rem;
+        left:1.7rem;
+        background: url("/public/img/game/button.png") center center no-repeat;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .3rem;
+        color:#fff;
+    }
+    #alert .close{
+        width: .66rem;
+        height: .66rem;
+        position: absolute;
+        z-index: 50;
+        top:8.3rem;
+        left:2.8rem;
+        background: url("/public/img/game/close.png") center center no-repeat;
+        background-size: contain;
+    }
+</style>
+<body>
+<header>
+    <div class="title">
+        <a class="back" href="javascript:history.go(-1)"></a>
+        <div class="center">真心话</div>
+        <div class="right">换一批</div>
+    </div>
+</header>
+<div id="alert">
+    <div class="info">
+        <div class="text">
+
+        </div>
+    </div>
+    <div class="repeat" id="repeat">
+        再玩一次
+    </div>
+    <div class="close" id="close">
+
+    </div>
+
+</div>
+<section>
+    <div class="con">
+        <?php foreach($data as $v): ?>
+        <div class="content">
+            <?php echo $v['content'] ?>
+        </div>
+        <?php endforeach ?>
+    </div>
+</section>
+<footer>
+    <div></div>
+    <h6>MATTERS NEEDING <span class="s1">ATTENTION</span></h6>
+    <span class="s2"></span>
+    <p>1.先选真心话还是大冒险； <br>
+        2.再次从上方九宫格中选取一个，如果选中的无法实现，有一次机会重新选择。
+    </p>
+</footer>
+<div class="foot">
+    <div class="foot1 active">真心话</div>
+    <div class="foot2">大冒险</div>
+</div>
+</body>
+</html>
+<script>
+    $(function () {
+        var alertEl = $('#alert');
+        $('section').on('click', '.con .content', function () {
+            //让其他的不变颜色
+            /* for (let i = 0; i < $('.con .content').length; i++) {
+             $('.con .content').removeClass('active');
+             }*/
+            alertEl.addClass('active');
+            $(this).addClass('active');
+            $('.info .text').html($(this).html());
+            if ($('section .con .content.active').length == 9) {
+                $('.title .right').addClass('active');
+            }
+        });
+
+        $('#repeat,#close').on('click',function () {
+            alertEl.removeClass('active');
+        });
+
+        //点击alert的时候遮罩消失或者出现
+//        alertEl.on('click', function () {
+//            $(this).removeClass('active');
+//            $(this).find('.info').on('click', false);
+//        });
+        var index;
+        $('header').on('click', '.right.active', function () {
+            var that = this;
+            var cid;
+            if ($('.foot1').hasClass('active')) {
+                index = 1;
+                index++;
+                cid = 1;
+            }
+            if ($('.foot2').hasClass('active')) {
+                index = 1;
+                index++;
+                cid = 2;
+            }
+            $.ajax({
+                url: '/index.php/game/game3?page=' + index,
+                data: {page: index, cid: cid},
+                success: function (data) {
+                    $(that).removeClass('active');
+                    data = JSON.parse(data);
+                    $('section .con').empty();
+                    $.each(data, function (i, v) {
+                        $(`<div class="content">${v.content}</div>`)
+                            .appendTo($('section .con'));
+                    })
+                }
+            })
+        })
+        var cid;
+        $('.foot1').on('click', function () {
+            $(this).addClass('active');
+            $('.foot2').removeClass('active');
+            $('.title .center').html('真心话');
+            cid = 1;
+            ajax();
+        });
+        $('.foot2').on('click', function () {
+            $(this).addClass('active');
+            $('.foot1').removeClass('active');
+            $('.title .center').html('大冒险');
+            cid = 2;
+            ajax();
+        });
+        function ajax() {
+            $.ajax({
+                url: '/index.php/game/game4',
+                data: {page: 1, cid: cid},
+                dataType:'json',
+                success: function (data) {
+                    $('section .con').empty();
+                    $.each(data, function (i, v) {
+                        $(`<div class="content">${v.content}</div>`)
+                            .appendTo($('section .con'));
+                    })
+                }
+            })
+        }
+
+    })
+</script>
+<!--json  javascritp object notatin -->

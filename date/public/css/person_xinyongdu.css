@@ -1,0 +1,199 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+* {
+    font-family: "苹方 中等";
+}
+
+body {
+    background: #F2F2F2;
+}
+
+.head {
+    width: 100%;
+    height: 0.88rem;
+}
+
+.header {
+    width: 100%;
+    height: 0.88rem;
+    position: fixed;
+    background: #FFDC17;
+    padding: 0 .24rem;
+    display: flex;
+}
+
+.header a {
+    width: 0.22rem;
+    height: 0.88rem;
+    display: block;
+}
+
+.header a .sign {
+    width: 0.22rem;
+    height: 0.36rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("/date/public/img/person_1.png") center center no-repeat;
+    background-size: cover;
+}
+
+.header h2 {
+    width: 1.72rem;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    font-size: 0.34rem;
+    color: #372D23;
+    text-align: center;
+    line-height: 0.88rem;
+}
+
+.banner {
+    width: 100%;
+    height: 2.86rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 1px 1px #ECECEC;
+}
+
+.banner .content {
+    width: auto;
+    height: auto;
+    line-height: 1.05rem;
+}
+
+.banner .content .photo {
+    width: 0.9rem;
+    height: 1.05rem;
+    background: url("/date/public/img/person_3_03.png") center center no-repeat;
+    background-size: contain;
+    float: left;
+}
+
+.banner .content h2 {
+    font-size: 0.7rem;
+    color: #60CDFC;
+    float: left;
+    margin-left: 0.36rem;
+}
+
+.record {
+    width: 100%;
+    height: 0.88rem;
+    background: white;
+    margin-top: 0.24rem;
+    font-size: .28rem;
+    text-align: center;
+    line-height: .88rem;
+    font-weight: bold;
+    box-shadow: 0px 3px 1px 1px #ECECEC;
+}
+
+.list {
+    width: 100%;
+    height: 0.88rem;
+    background: white;
+    margin-top: 0.24rem;
+    box-shadow: 0px 3px 1px 1px #ECECEC;
+    display: flex;
+    align-items: center;
+}
+
+.list .xing {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url("/date/public/img/person_3_01.png") center center no-repeat;
+    background-size: contain;
+    float: left;
+    margin-left: .24rem;
+}
+
+.list .arrow {
+    width: 0.09rem;
+    height: 0.11rem;
+    background: url("/date/public/img/person_3_10.png") center center no-repeat;
+    background-size: contain;
+    margin-top: .29rem;
+    margin-left: .03rem;
+}
+
+.list .content {
+    width: 2.3rem;
+    height: auto;
+    margin-left: .24rem;
+}
+
+.list .content h2 {
+    font-size: .28rem;
+}
+
+.list .content h1 {
+    font-size: .28rem;
+    margin-top: -0.08rem;
+    color: #5ACCFC;
+}
+
+.list h3 {
+    font-size: .28rem;
+    float: right;
+    color: #5ACCFC;
+    margin-left: 3.4rem;
+}

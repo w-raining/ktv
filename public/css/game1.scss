@@ -1,0 +1,106 @@
+$them: .6rem;
+$img: '/public/img/';
+$color: #fff;
+@mixin flex() {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex1() {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex2() {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin font() {
+  font-size: .26rem;
+}
+
+@mixin img() {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 4.06rem;
+  background: url($img + 'game/g8.png') center center no-repeat;
+  background-size: cover;
+  border: 1px solid rgba(0, 0, 0, 0);
+  .title {
+    width: 100%;
+    height: auto;
+    padding: 0 .24rem;
+    margin-top: .25rem;
+    position: relative;
+    .back {
+      width: .38rem;
+      height: .38rem;
+      background: url($img + 'game/g1.png') center center no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      left: .24rem;
+    }
+    .center {
+      width: 100%;
+      font-size: .26rem;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 0 .24rem;
+  margin-top: -3rem;
+  .con {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: .5rem .2rem;
+    box-shadow: 1px 1px 10px 1px #F2DAF4;
+    @include flex1();
+    flex-wrap:wrap;
+    a {
+      width: 48.5%;
+      height: 2.8rem;
+      box-shadow: 1px 1px 10px 1px #F2DAF4;
+      background: #fff;
+      margin-right: 3%;
+      background: url($img + 'game/g2.png') center center no-repeat;
+      background-size: 2rem;
+      margin-bottom: .3rem;
+    }
+    a:nth-child(2){
+      background: url($img + 'game/g3.png') center center no-repeat;
+      background-size: 2rem;
+    }
+    a:nth-child(3){
+      background: url($img + 'game/g4.png') center center no-repeat;
+      background-size: 2rem;
+    }
+  }
+}

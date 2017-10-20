@@ -1,0 +1,77 @@
+*{
+    list-style: none;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background: url("/public/img/index/index.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.addres{
+    width: 1.2rem;
+    height: .45rem;
+    margin:.24rem 0 0 .24rem;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.addres .add_left{
+    width: .33rem;
+    height: .45rem;
+    background: url("/public/img/index/i5.png") center center no-repeat;
+    background-size: cover;
+}
+.addres .add_right{
+    margin-left: .1rem;
+    width: .68rem;
+    height: .4rem;
+    background: url("/public/img/index/text.png") center center no-repeat;
+    background-size: contain;
+}
+.addres .add_bottom{
+    width: .59rem;
+    height: .1rem;
+    position: absolute;
+    bottom:-.08rem;
+    right:.15rem;
+    background: url("/public/img/index/i6.png") center center no-repeat;
+    background-size: contain;
+}
+.item{
+    width: 5.9rem;
+    height: auto;
+    position: absolute;
+    bottom:.3rem;
+    left:.24rem;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.item>a{
+    display: block;
+    width: 2.81rem;
+    height:2rem;
+    border-radius: .2rem;
+}
+.item>a:nth-child(1){
+    background: url("/public/img/index/i1.png") center center no-repeat;
+    background-size: 3rem;
+}
+.item>a:nth-child(2){
+    background: url("/public/img/index/i2.png") center center no-repeat;
+    background-size: 3rem;
+}
+.item>a:nth-child(3){
+    background: url("/public/img/index/i3.png") center center no-repeat;
+    background-size: 3rem;
+}
+.item>a:nth-child(4){
+    background: url("/public/img/index/i4.png") center center no-repeat;
+    background-size: 3rem;
+}

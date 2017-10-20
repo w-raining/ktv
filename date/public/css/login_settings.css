@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+html #el, body #el {
+  width: 3.48rem;
+  height: 2.07rem;
+  background-image: url("../img/login_success03.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+html .login_settings, body .login_settings {
+  width: 100%;
+  height: 100%;
+}
+
+html .login_settings .login_settings_head, body .login_settings .login_settings_head {
+  width: 100%;
+  height: 0.84rem;
+  background: #FFDC20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 0.3rem;
+  color: #3B2F27;
+  text-align: center;
+  line-height: 0.84rem;
+  font-weight: 600;
+}
+
+html .login_settings .login_settings_head .login_head_left, body .login_settings .login_settings_head .login_head_left {
+  width: 0.22rem;
+  height: 0.84rem;
+  position: absolute;
+  top: 0;
+  left: 0.24rem;
+}
+
+html .login_settings .login_settings_head .login_head_left .login_btn_icon, body .login_settings .login_settings_head .login_head_left .login_btn_icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/login_settings_03.png");
+  background-size: cover;
+}
+
+html .login_settings .login_info_son, body .login_settings .login_info_son {
+  width: 7.02rem;
+  height: 2.65rem;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 1.1rem;
+}
+
+html .login_settings .login_info_son .login_info_put, body .login_settings .login_info_son .login_info_put {
+  width: 100%;
+  height: 1rem;
+  background-image: url("../img/login_back_11.png");
+  background-size: cover;
+  border: none;
+  border-radius: 0.45rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+html .login_settings .login_info_son .login_info_put .login_put_left, body .login_settings .login_info_son .login_info_put .login_put_left {
+  width: 2rem;
+  height: 100%;
+  line-height: 1rem;
+  color: #000;
+  font-size: 0.12rem;
+  padding-left: 0.44rem;
+}
+
+html .login_settings .login_info_son .login_info_put input, body .login_settings .login_info_son .login_info_put input {
+  outline: none;
+  background: none;
+  border: none;
+  width: 5.02rem;
+  height: 100%;
+}
+
+html .login_settings .login_info_son .login_info_put .login_success, body .login_settings .login_info_son .login_info_put .login_success {
+  width: 0.5rem;
+  height: 0.4rem;
+  background-image: url(../img/login_success_10.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.5rem;
+  display: none;
+}
+
+html .login_settings .login_info_son .login_info_put .login_success.active, body .login_settings .login_info_son .login_info_put .login_success.active {
+  display: block;
+}
+
+html .login_settings .login_info_son .login_password, body .login_settings .login_info_son .login_password {
+  top: 1.67rem;
+}
+
+html .login_settings .login_info_son .login_info_line, body .login_settings .login_info_son .login_info_line {
+  padding: 0 0.2rem;
+  height: 0.52rem;
+  background: #AAED4E;
+  border-radius: 0.45rem;
+  color: #fff;
+  font-size: 0.23rem;
+  text-align: center;
+  line-height: 0.52rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+html .login_settings .login_settings_finish, body .login_settings .login_settings_finish {
+  width: 100%;
+  height: 1.29rem;
+  background: #3B2F27;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+html .login_settings .login_settings_finish a, body .login_settings .login_settings_finish a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 0.4rem;
+  text-align: center;
+  line-height: 1.29rem;
+}

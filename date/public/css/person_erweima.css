@@ -1,0 +1,154 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+* {
+    font-family: "苹方 中等";
+}
+
+body {
+    background: #F2F2F2;
+}
+
+.header {
+    width: 100%;
+    height: 0.88rem;
+    position: relative;
+    background: #FFDC17;
+    padding: 0 .24rem;
+    display: flex;
+}
+
+.header a {
+    width: 0.22rem;
+    height: 0.88rem;
+    display: block;
+}
+
+.header a .sign {
+    width: 0.22rem;
+    height: 0.36rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("/date/public/img/person_1.png") center center no-repeat;
+    background-size: cover;
+}
+
+.header h2 {
+    width: 1.72rem;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    font-size: 0.34rem;
+    color: #372D23;
+    text-align: center;
+    line-height: 0.88rem;
+}
+
+.banner {
+    width: 100%;
+    height: 4.6rem;
+    background: #372D23;
+    padding-top: 0.59rem;
+    text-align: center;
+}
+
+.banner .circle {
+    width: 1.54rem;
+    height: 1.54rem;
+    background: #B3AFAB;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.banner .circle .head {
+    width: 1.18rem;
+    height: 1.18rem;
+    border-radius: 50%;
+    background: url("/date/public/img/dyna_sy_3.jpg") center no-repeat;
+    background-size: contain;
+}
+
+.banner h2 {
+    font-size: 0.32rem;
+    margin-top: 0.33rem;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 0.24rem;
+    color: #5ACCFC;
+    margin-top: 0.45rem;
+}
+
+.erweima {
+    width: 4.32rem;
+    height: 4.32rem;
+    background: url("/date/public/img/person_2_01.png") center center no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    margin-top: .88rem;
+}
+
+h2 {
+    font-size: .32rem;
+    text-align: center;
+    margin-top: .25rem;
+}

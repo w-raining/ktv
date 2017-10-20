@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lyric</title>
+    <link rel="stylesheet" href="/public/css/lyric.css">
+    <script src="/public/js/resize.js"></script>
+    <script src="/public/js/jquery-3.2.1.js"></script>
+    <script src="/public/js/lyric.js"></script>
+</head>
+<style>
+    #hot{
+        color:#12a0ff;
+        font-size: 20px;
+    }
+</style>
+<body>
+<audio src="<?php echo $music['src'] ?>"></audio>
+
+<div class="mask" style=" background-image: url('<?php echo $music['singer1_pic'] ?>');
+    background-size: cover;">
+    <div class="mask1"></div>
+    <input type="hidden" value="<?php echo $music['name'] ?>">
+    <div class="content">
+        <div class="nav">
+            <div class="back">
+                <a href="javascript:history.go(-1)"><i></i></a>
+            </div>
+            <div class="nav-content">
+                <h2><?php echo $music['name'] ?></h2>
+            </div>
+            <a href="/index.php/music/already" class="checked">
+
+            </a>
+        </div>
+        <ul class="lyric">
+
+        </ul>
+
+    </div>
+
+</div>
+<div id="bottom">
+    <ul class="sign">
+        <li>
+            <i></i>
+            <span>原/伴</span>
+        </li>
+        <li>
+            <i></i>
+            <span>切歌</span>
+        </li>
+        <li>
+            <i id="play"></i>
+        </li>
+        <li>
+            <i></i>
+            <span>重唱</span>
+        </li>
+        <li>
+            <i></i>
+            <span>录歌</span>
+        </li>
+    </ul>
+    <div class="voice">
+        <div class="voice2">
+            <div class="horn"></div>
+            <div class="progress">
+                <div class="hua"></div>
+                <div class="big">
+                    <div class="small"></div>
+                </div>
+            </div>
+            <span>63</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

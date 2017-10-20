@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH.'calllist_lt.css';?>">
+    <script src="<?php echo JS_PATH.'jquery.js';?>"></script>
+    <script src="<?php echo JS_PATH.'calllist_lt.js';?>"></script>
+    <style>
+        .lt_list li > a {
+            color: #666666;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        #floor {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="cbc-box">
+    <a class="left" href="/date/index.php/friendlist/addcall"></a>
+    <div class="z">通讯录好友</div>
+</div>
+<div class="cbc-a">
+    <?php foreach($number as $k=>$v):?>
+    <a id="floor" name="<?php echo $v['number']?>"></a>
+    <div class="a" data-id="<?php echo json_encode($v)?>"><?php echo $v['number'];?></div>
+    <?php foreach($data as $k=>$v):?>
+    <li class="cbc-list c<?php echo $v['id'];?>" id='<?php echo json_encode($v)?>'>
+        <div class="tou" style="background: url(<?php echo $v['pic'];?>) center/cover no-repeat"></div>
+        <div class="name"><?php echo $v['name'];?></div>
+        <div class="yu"><?php echo $v['sign'];?></div>
+        <div class="xing"></div>
+        <div class="right">添加</div>
+    </li>
+    <?php endforeach;?>
+    <?php endforeach;?>
+
+    <div class="lt_list">
+        <li style="background: url(/date/public/img/list_lt_21.png) center/cover no-repeat"></li>
+        <li><a href="#A">A</a></li>
+        <li><a href="#B">B</a></li>
+        <li><a href="#C">C</a></li>
+        <li><a href="#D">D</a></li>
+        <li><a href="#E">E</a></li>
+        <li><a href="#F">F</a></li>
+        <li><a href="#G">G</a></li>
+        <li><a href="#H">H</a></li>
+        <li><a href="#I">I</a></li>
+        <li><a href="#J">J</a></li>
+        <li><a href="#K">K</a></li>
+        <li><a href="#L">L</a></li>
+        <li><a href="#M">M</a></li>
+        <li><a href="#N">N</a></li>
+        <li><a href="#O">O</a></li>
+        <li><a href="#P">P</a></li>
+        <li><a href="#Q">Q</a></li>
+        <li><a href="#R">R</a></li>
+        <li><a href="#S">S</a></li>
+        <li><a href="#T">T</a></li>
+        <li><a href="#U">U</a></li>
+        <li><a href="#V">V</a></li>
+        <li><a href="#W">W</a></li>
+        <li><a href="#X">X</a></li>
+        <li><a href="#Y">Y</a></li>
+        <li><a href="#Z">Z</a></li>
+        <li>#</li>
+    </div>
+</div>
+</body>
+</html>

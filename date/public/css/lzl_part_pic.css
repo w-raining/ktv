@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: '苹方 中等';
+    /*font-size: 0.12rem;*/
+}
+a{
+    text-decoration: none;
+    color:#372d23;
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 100px;
+    }
+}
+.cbc-box {
+    width: 100%;
+    height: 0.88rem;
+    background: #FFDC17;
+    position: fixed;
+    padding-right: 0.24rem;
+    padding-left: 0.24rem;
+    z-index: 100;
+}
+
+.cbc-box .left {
+    width: 0.22rem;
+    height: 0.36rem;
+    background-image: url(/date/public/img/cbc-hong1.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.cbc-box .z {
+    width: 1.74rem;
+    height: 100%;
+    font-size: 0.34rem;
+    line-height: 0.88rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 800;
+}
+.cbc-box .i{
+    float: right;
+    font-size: 0.3rem;
+    margin-top: 0.3rem;
+    font-weight: 600;
+}
+.lzl_word{
+    width:100%;
+    height:4.75rem;
+    box-shadow: 0 0 0.5rem 0 #c8c8c8;
+    margin-top: 0.8rem;
+    font-size: 0.28rem;
+    color:#b4b4b4;
+    border: 0;
+    outline:none;
+    padding:0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.lzl_word p{
+    width:100%;
+    height:65%;
+}
+.lzl_word .add{
+    width:1.57rem;
+    height:1.57rem;
+    background:#eeeeee;
+    margin-right: 0.24rem;
+    position: relative;
+}
+.lzl_word .add:last-child .jiahao{
+    width:0.44rem;
+    height:0.44rem;
+    background:red;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    margin:auto;
+}
+.lzl_di{
+    width:100%;
+    height:1.28rem;
+    background:#372d23;
+    color:white;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.28rem;
+    font-size: 0.4rem;
+    position: fixed;
+    bottom: 0;
+}

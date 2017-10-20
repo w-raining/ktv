@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+
+
+.box1{
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.4);
+    padding:0.24rem;
+    position: absolute;
+    top:0;
+    z-index: 1000;
+}
+
+.key{
+    width:100%;
+    height:4.85rem;
+    background: #fff;
+    padding-top: 0.25rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    text-align: center;
+}
+.top{
+    width:100%;
+    height:1rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    background: #FFDC17;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.32rem;
+}
+.gender{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.gender li{
+    width:33.333333%;
+    height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 0.35rem 0.35rem;
+    background-position: center center;
+}
+.gender li:nth-child(1){
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+.gender li:nth-child(3){
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+.gender .active{
+    background: #FFDC17;
+}
+
+#fin{
+    width:5.24rem;
+    height:0.8rem;
+    margin:0 auto;
+    border:0;
+    background: #372D23;
+    font-size: 0.34rem;
+    color: #fff;
+}
+
+.bao{
+    margin-top: 5.5rem;
+}
+
+#trigger2{
+    background-size: cover;
+    color: #7CD5FC;
+    font-weight:700;
+}
+#trigger5{
+    background-size: cover;
+    color: #7CD5FC;
+}
+#close{
+    width:0.4rem;
+    height:0.4rem;
+    background:url("../img/cbc-4.png");
+    background-size: cover;
+    transform: rotate(45deg);
+    position:absolute;
+    top:-0.9rem;
+    right:0.1rem;
+    border: 0;
+}

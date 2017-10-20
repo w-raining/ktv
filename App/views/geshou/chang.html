@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/public/css/chang.css">
+    <script src="/public/js/resize.js"></script>
+    <script src="/public/js/jquery-3.2.1.js"></script>
+    <script src="/public/js/plus.js"></script>
+    <title>常唱</title>
+</head>
+<body>
+<div class="ban">
+    <div class="con">
+        <div class="top">
+            <a class="back" href="/index.php/first/index"></a>
+            <p>常唱</p>
+            <a class="yi" href="/index.php/tui/index">已点歌曲</a>
+        </div>
+        <ul class="top_two">
+            <li>
+                <a href="/index.php/geshou/index">歌手</a>
+            </li>
+            <li><a  href="/index.php/geshou/paihang">排行</a></li>
+            <li>
+                <div class="logo" style="margin-right: .05rem;margin-top: -.03rem"></div>
+                <a>常唱</a>
+            </li>
+            <li><a style="text-align:right" href="/index.php/tui/tuijian">推荐歌单</a></li>
+        </ul>
+        <div class="inputs">
+            <input type="text" placeholder="请输入您要搜索的歌手">
+            <div class="search"></div>
+        </div>
+    </div>
+    <?php include 'App/views/geshou/song_list.html' ?>
+</div>
+
+</html>

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="<?php echo CSS_PATH.'login_index.css'?>">
+    <link rel="stylesheet" href="<?php echo CSS_PATH.'register.css'?>">
+    <script src="<?php echo JS_PATH.'jquery.js'?>"></script>
+    <script src="<?php echo JS_PATH.'login_index.js'?>"></script>
+    <script src="<?php echo JS_PATH.'register.js'?>"></script>
+    <title>登陆注册</title>
+</head>
+<body>
+<!--大背景-->
+<div class="login_back">
+    <!--中间大logo开始-->
+    <div class="login_logo">
+        <div class="login_logo_son">
+            <img src="/date/public/img/login_back_05.png" alt="">
+        </div>
+    </div>
+    <!--大logo结束-->
+    <!--登录注册开始-->
+    <div class="login_register">
+        <div class="login_login">
+            <a href="#" class="login_top">登陆</a>
+        </div>
+        <div class="login_login login_enroll login_bottom">
+            <a href="#">注册</a>
+        </div>
+    </div>
+    <!--登录注册结束-->
+    <!--分线开始-->
+    <div class="login_line"></div>
+    <!--分线结束-->
+    <!--第三方开始-->
+    <div class="login_thirdparty">
+        <ul class="login_thirdparty_son">
+            <li>
+                <a href="#"></a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+        </ul>
+    </div>
+    <!--第三方结束-->
+    <!--登陆页面开始-->
+    <div class="login_inputa">
+        <div class="login_down"></div>
+        <div class="login_info">
+            <div class="login_info_son">
+                <form id="form1">
+                    <div class="login_info_put login_admin">
+                        <label class="login_put_left">手机号</label>
+                        <input type="text" name="phone" class="phone" value="" placeholder="输入手机号">
+                    </div>
+                    <div class="login_info_put login_password">
+                        <label class="login_put_left">密码</label>
+                        <input type="text" class="password" name="password" value="" placeholder="输入您的密码">
+                    </div>
+                </form>
+            </div>
+            <div class="login_info_self">
+                <div class="login_self_left"><input type="radio"><a href="#">自动登录</a></div>
+                <div class="login_self_right"><a href="#">忘记密码</a></div>
+            </div>
+            <div class="login_info_btn">
+                <button id="login1">登&nbsp;&nbsp; 录</button>
+            </div>
+            <div class="login_phone_info login_phone_info1">
+                <a href="#">邮箱登录</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="login_inputb active">
+        <div class="login_down"></div>
+        <div class="login_info">
+            <div class="login_info_son">
+                <form id="form2">
+                    <div class="login_info_put login_admin">
+                        <label class="login_put_left">邮箱</label>
+                        <input type="text" name="email" value="" placeholder="输入邮箱">
+                    </div>
+                    <div class="login_info_put login_password">
+                        <label class="login_put_left">密码</label>
+                        <input type="text" class="input2" name="password" value="" placeholder="输入密码">
+                    </div>
+                </form>
+            </div>
+            <div class="login_info_self">
+                <div class="login_self_left"><input type="radio"><a href="#">自动登录</a></div>
+            </div>
+            <div class="login_info_btn">
+                <button class="login2">登&nbsp;&nbsp; 录</button>
+            </div>
+            <div class="login_admin_info login_admin_info2">
+                <a href="#">手机号登录</a>
+            </div>
+        </div>
+    </div>
+
+    <!--使用邮箱号注册-->
+    <div class="login_input" id="login_input1">
+        <div class="login_down"></div>
+        <div class="login_info">
+            <div class="login_info_son">
+                <form id="form3" method="post" enctype="multipart/form-data">
+                    <div class="phone_num">
+                        <div class="login_info_put login_admin">
+                            <label class="login_put_left">手机号</label>
+                            <input type="text" name="phone"  id="phone" value="" placeholder="输入11位手机号">
+                            <div class="error error1 active"></div>
+                            <div class="success success1 active"></div>
+                        </div>
+                        <div class="login_info_put login_code">
+                            <label class="login_put_left">验证码</label>
+                            <input type="text" id="code" name="code" value="" placeholder="输入验证码">
+                            <div class="get" style="z-index: 10">获取验证码</div>
+                            <div class="wait">60s</div>
+                        </div>
+                        <div class="login_info_put login_password">
+                            <label class="login_put_left">密码</label>
+                            <input type="text" name="password"  class="password1" value="" placeholder="设置密码 ">
+                            <div class="tip">请使用英文开头并不少于8位</div>
+                            <div class="error error2 active"></div>
+                            <div class="success success2 active"></div>
+                        </div>
+                        <div class="login_info_put login_repeat">
+                            <label class="login_put_left">确认</label>
+                            <input type="text"  name="password_one" class="password2" value="" placeholder="重复输入密码">
+                            <div class="error error3 active"></div>
+                            <div class="success success3 active"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="login_info_btn login_btn1">
+                <button id="button" class="register">注&nbsp;&nbsp; 册</button>
+            </div>
+            <div class="login_phone_info">
+                <a href="#" id="as1">使用邮箱号注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="tips">手机格式不正确</div>
+
+
+    <!--使用邮箱注册-->
+    <div class="login_input" id="login_input2" style="height: 9.6rem;z-index: 10">
+        <div class="login_down"></div>
+        <div class="login_info">
+            <div class="login_info_son">
+                <form id="form4" method="post" enctype="multipart/form-data">
+                    <div class="phone_num">
+                        <div class="login_info_put login_admin">
+                            <label class="login_put_left">邮箱</label>
+                            <input type="text" name="email"  id="email" value="" placeholder="输入邮箱号">
+                            <div class="error errory active"></div>
+                            <div class="success successy active"></div>
+                        </div>
+                        <div class="login_info_put login_password">
+                            <label class="login_put_left">密码</label>
+                            <input type="password" name="password3" id="passwors3"  class="password3" value="" placeholder="设置密码 ">
+                            <div class="tip">请使用英文开头并不少于8位</div>
+                            <div class="error error3 active"></div>
+                            <div class="success success4 active"></div>
+                        </div>
+                        <div class="login_info_put login_repeat">
+                            <label class="login_put_left">确认</label>
+                            <input type="password"  name="password4" id="password4" class="password4" value="" placeholder="重复输入密码">
+                            <div class="error error4 active"></div>
+                            <div class="success success5 active"></div>
+                        </div>
+                        <div class="login_info_btn  login_btn2" >
+                            <button id="button1" class="register">注&nbsp;&nbsp; 册</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="login_phone_info">
+                <a href="#" id="as2">使用手机注册</a>
+            </div>
+        </div>
+    </div>
+    <!--登陆页面结束-->
+</div>
+</body>
+</html>

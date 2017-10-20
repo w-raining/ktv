@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH.'login_settings.css'?>">
+    <script src="<?php echo JS_PATH.'jquery.js'?>"></script>
+    <script src="<?php echo JS_PATH.'login_settings.js'?>"></script>
+</head>
+<body>
+<div class="login_settings">
+    <div class="login_settings_head">设置密码
+        <div class="login_head_left">
+            <a class="login_btn_icon" href="#"></a>
+        </div>
+    </div>
+    <div class="login_settings_put">
+        <div class="login_info_son">
+            <form id="form">
+                <div class="login_info_put login_admin">
+                    <label class="login_put_left">密码</label>
+                    <input type="text" name="admin" value="" placeholder="设置密码">
+                    <div class="login_success"></div>
+                </div>
+                <div class="login_info_line">请使用英文开头并不少于八位</div>
+                <div class="login_info_put login_password">
+                    <label class="login_put_left">确认</label>
+                    <input type="text" class="input2" name="password" value="" placeholder="重复输入密码">
+                    <div class="login_success"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="login_settings_finish"><a href="#" id="login_finish_btn">完成</a></div>
+</div>
+</body>
+</html>

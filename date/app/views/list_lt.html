@@ -1,0 +1,159 @@
+<?php include VIEW_PATH.'cbc-listt.html';?>
+<link rel="stylesheet" href="<?php echo CSS_PATH.'list_lt.css';?>">
+<script src="<?php echo JS_PATH.'jquery.js';?>"></script>
+<script src="<?php echo JS_PATH.'list_lt.js';?>"></script>
+<div class="lt_content">
+
+    <div class="lt_tips">
+        <li class="lt_tip">
+            <div class="tip">
+                <div class="timeju">
+                    <div class="icon"
+                         style="background: url(<?php echo IMG_PATH.'list_lt_17.png';?>) center/cover no-repeat"></div>
+                    今天
+                    <span>12:00</span>
+                </div>
+                <div class="areaju">
+                    <div class="icon"
+                         style="background: url(/date/public/img/list_lt_18.png) center/cover no-repeat"></div>
+                    北美新天地海底捞
+                </div>
+                <div class="nameju">
+                    <div class="icon"
+                         style="background: url(/date/public/img/list_lt_19.png) center/cover no-repeat"></div>
+                    和
+                    <span class="name">小王</span>
+                    吃饭
+                </div>
+                <div class="moreju">
+                    <img src="/date/public/img/dyna_ry_4.png" alt="" class="more">
+                </div>
+                <div class="detail">天 10:00 我邀请了小王 备注：好久不见了，出来吃个饭</div>
+                <div class="delete">删除</div>
+            </div>
+        </li>
+    </div>
+
+    <div class="lt_function">
+        <a class="lt_fun invite">
+            <div class="invite-icon">
+                <img src="/date/public/img/list_lt_10.png" alt="">
+            </div>
+            <span>发起邀请</span>
+        </a>
+        <a class="lt_fun scan">
+            <div class="invite-icon">
+                <img src="/date/public/img/list_lt_13.png" alt="">
+            </div>
+            <span>扫一扫</span>
+        </a>
+        <a class="lt_fun" href="/date/index.php/friendlist/addcall">
+            <div class="invite-icon">
+                <img src="/date/public/img/list_lt_14.png" alt="">
+            </div>
+            <span>添加好友</span>
+        </a>
+    </div>
+
+    <div class="mask">
+        <div class="lt_list">
+
+            <div class="lt_search">
+                <input type="text" value="搜索">
+                <div class="mag"></div>
+                <div class="say"></div>
+            </div>
+
+            <a class="lt_friend" href="/date/index.php/friendlist/addcall">
+                <div class="head" style="background-color: #ffdc17;
+                background-image: url('/date/public/img/list_lt_14.png');
+                background-position: center;
+                background-size: 70%;
+                background-repeat: no-repeat;"></div>
+                <span>添加好友</span>
+            </a>
+
+            <div class="order">
+                <?php foreach($number as $k=>$v):?>
+                <input type="hidden" value="<?php echo $v['id']?>">
+                <div class="number"><?php echo $v['number']?></div>
+                <?php foreach($data as $k=>$v):?>
+                <div class="l_friend">
+                    <div class="lt_friend">
+                        <div class="head"
+                             style="background: url(<?php echo $v['pic'];?>) center/cover no-repeat"></div>
+                        <span class="name"><?php echo $v['name'];?></span>
+                        <span class="thing"><?php echo $v['act'];?></span>
+                        <div class="add">发起邀请</div>
+                    </div>
+                </div>
+                <?php endforeach;?>
+                <?php endforeach;?>
+            </div>
+
+            <div class="list">
+                <div class="mirror"
+                     style="background: url(/date/public/img/list_lt_16.png) center/cover no-repeat"></div>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+                <li>D</li>
+                <li>E</li>
+                <li>F</li>
+                <li>G</li>
+                <li>H</li>
+                <li>I</li>
+                <li>J</li>
+                <li>K</li>
+                <li>L</li>
+                <li>M</li>
+                <li>N</li>
+                <li>O</li>
+                <li>P</li>
+                <li>Q</li>
+                <li>R</li>
+                <li>S</li>
+                <li>T</li>
+                <li>U</li>
+                <li>V</li>
+                <li>W</li>
+                <li>X</li>
+                <li>Y</li>
+                <li>Z</li>
+            </div>
+
+            <div class="cs"></div>
+        </div>
+    </div>
+
+    <div class="lt_search">
+        <input type="text" value="搜索">
+        <div class="mag"></div>
+        <div class="say"></div>
+    </div>
+
+    <div class="lt_message">
+        <?php foreach($mess as $k=>$v):?>
+        <li class="pos">
+            <div class="info">
+                <a class="head" style="background: url('<?php echo $v['pic'];?>') center/cover no-repeat" href="/date/index.php/chat_cwf/index?id=<?php echo $v['id']?>">
+                    <div class="circle"></div>
+                </a>
+                <div class="name">
+                    <?php echo $v['name'];?>
+                    <span class="time">12:00</span>
+                </div>
+                <div class="mess"><?php echo $v['message']?></div>
+                <div class="add">发起邀请</div>
+                <div class="delete">删除</div>
+            </div>
+        </li>
+        <?php endforeach;?>
+    </div>
+
+    <div class="lt_mask">
+        <?php include VIEW_PATH.'yao.html';?>
+    </div>
+
+    <?php include VIEW_PATH.'cbc-list.html';?>
+</div>

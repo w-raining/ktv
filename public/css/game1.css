@@ -1,0 +1,84 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 4.06rem;
+  background: url("/public/img/game/g8.png") center center no-repeat;
+  background-size: cover;
+  border: 1px solid transparent;
+}
+
+header .title {
+  width: 100%;
+  height: auto;
+  padding: 0 .24rem;
+  margin-top: .5rem;
+  position: relative;
+}
+
+header  .back {
+  width: .38rem;
+  height: .38rem;
+  background: url("/public/img/game/g1.png") center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: .24rem;
+}
+
+header .title .center {
+  width: 100%;
+  font-size: .26rem;
+  color: #fff;
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 0 .24rem;
+  margin-top: -2.8rem;
+}
+
+section .con {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: .5rem .2rem;
+  box-shadow: 1px 1px 10px 1px #F2DAF4;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section .con a {
+  width: 48.5%;
+  height: 2.8rem;
+  box-shadow: 1px 1px 10px 1px #F2DAF4;
+  background: #fff;
+  margin-right: 3%;
+  background: url("/public/img/game/g2.png") center center no-repeat;
+  background-size: 2rem;
+  margin-bottom: .3rem;
+}
+
+section .con a:nth-child(2) {
+  background: url("/public/img/game/g3.png") center center no-repeat;
+  background-size: 2rem;
+}
+
+section .con a:nth-child(3) {
+  background: url("/public/img/game/g4.png") center center no-repeat;
+  background-size: 2rem;
+}

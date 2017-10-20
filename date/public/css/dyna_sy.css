@@ -1,0 +1,200 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+* {
+  font-family: '苹方 常规';
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  padding: 0;
+  background: #EBEBEB;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+section .info {
+  width: 100%;
+  height: 5rem;
+  padding: 0 .24rem 0 .24rem;
+  background: #fff;
+  border: 1px solid transparent;
+}
+
+section .info .button {
+  width: 100%;
+  height: 0.73rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .28rem;
+  color: #fff;
+  margin-top: .2rem;
+}
+
+section .info .box_box {
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 3.78rem;
+}
+
+section .info .content {
+  display: flex;
+  width: 9rem;
+  height: 3.78rem;
+  position: absolute;
+  left: 0;
+}
+
+section .info .content .center {
+  width: 3.08rem;
+  height: 3.78rem;
+  background: green;
+  margin-top: .25rem;
+  background: url("/date/public/img/dyna_sy_12.png") center center no-repeat;
+  background-size: contain;
+  padding: .3rem;
+}
+
+section .info .content .center .top {
+  width: 100%;
+  height: 1.24rem;
+}
+
+section .info .content .center .top .top_one {
+  display: flex;
+  width: 100%;
+  height: 1rem;
+}
+
+section .info .content .center .top .top_one .person {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+}
+
+section .info .content .center .top .top_one .h4 {
+  width: 1.62rem;
+  height: 0.8rem;
+  font-size: .24rem;
+  color: #372D23;
+  margin-left: .15rem;
+  padding: .05rem;
+}
+
+section .info .content .center .top .top_one .h4 .num {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.2rem;
+  font-size: .18rem;
+  color: #FFDC17;
+  margin-left: .3rem;
+  margin-top: .06rem;
+  font-family: '苹方 特细';
+  font-weight: lighter;
+}
+
+section .info .content .center .top .text {
+  width: 100%;
+  height: 1rem;
+  font-size: .24rem;
+  color: #372D23;
+  line-height: .4rem;
+}
+
+section .info .content .center .top .text > span {
+  font-weight: lighter;
+}
+
+section .info .content .bottom {
+  width: 100%;
+  height: 1.05rem;
+  margin-top: 1rem;
+}
+
+section .info .content .bottom .h6 {
+  width: 100%;
+  height: 0.38rem;
+  font-size: .20rem;
+  color: #6E6E6E;
+  font-weight: normal;
+}
+
+section .info .content .bottom .h6 span {
+  color: #5ACCFC;
+}
+
+section .info {
+  margin-top: .2rem;
+}
+
+section .info:nth-child(1) {
+  margin-top: 0;
+  padding-top: .1rem;
+}
+
+section .info:last-child {
+  margin-bottom: 1rem;
+}

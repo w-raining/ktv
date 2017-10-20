@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-weight: 400;
+    vertical-align: baseline;
+    font-style: normal;
+    box-sizing:border-box;
+}
+a{
+    text-decoration: none;
+    display:block;
+}
+html,body{
+    width:100%;
+    height:100%;
+    overflow: scroll;
+    /*background-image: url(/public/img/images/play0.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;*/
+}
+.mask{
+    width:100%;
+    height: auto;
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.mask1{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: url("/public/img/tuijian/back.png") center center no-repeat;
+    background-size: cover;
+    z-index: 20;
+}
+.content{
+    width:100%;
+    height:auto;
+}
+.nav{
+    width:100%;
+    height:0.88rem;
+    display:flex;
+    padding:.24rem;
+    position: relative;
+    z-index: 1000;
+}
+.nav .back{
+    display: flex;
+    flex:1;
+    justify-content: flex-start;
+    -webkit-box-pack: start;
+    align-items: center;
+    -webkit-box-align: center;
+    line-height: .4rem;
+}
+.nav .back>a>i{
+    display: block;
+    width: .4rem;
+    height: .4rem;
+    background-image:url('/public/img/singer1/singer7.png');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.nav .nav-content{
+    display:flex;
+    flex:1;
+    justify-content: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    -webkit-box-align: center;
+}
+.nav .nav-content>h2{
+    width: 4rem;
+    font-size: 0.3rem;
+    color:#fff;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+.nav .checked{
+    display:flex;
+    flex:1;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.lyric{
+    width:100%;
+    height:6.4rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1000;
+
+}
+.lyric>li{
+    width:100%;
+    margin:0.12rem 0;
+    color:#F4D7E0;
+    font-size: 0.24rem;
+    text-align: center;
+    position: relative;
+    z-index: 500;
+}
+.lyric>li:nth-child(8),.lyric>li:nth-child(7){
+    font-size: 0.26rem;
+}
+.lyric>li:nth-child(6){
+    font-size: 0.3rem;
+    color:#FCE9EE;
+}
+#bottom{
+    width: 100%;
+    height: auto;
+    padding:.24rem;
+    position: relative;
+    z-index:1500;
+}
+.sign{
+    width:100%;
+    height:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 20;
+    background: #fff;
+}
+.sign>li{
+    height:1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.sign>li>i{
+    height:0.88rem;
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: space-between;
+    width:0.88rem;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+.sign>li:nth-child(1)>i{
+    background-image:url('/public/img/geci/ge2.png');
+}
+.sign>li:nth-child(2)>i{
+    background-image:url('/public/img/geci/ge3.png');
+}
+.sign>li:nth-child(3)>i{
+    width:1.2rem;
+    height:1.2rem;
+    background-image:url('/public/img/geci/ge1.png');
+    margin-top: -0.3rem;
+}
+.sign>li:nth-child(4)>i{
+    background-image:url('/public/img/geci/ge4.png');
+}
+.sign>li:nth-child(5)>i{
+    background-image:url('/public/img/geci/ge5.png');
+}
+.sign>li>span{
+    font-size: 0.22rem;
+    text-align: center;
+}
+.voice{
+    width:100%;
+    height:1.64rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    background: #fff;
+}
+.voice>div{
+    width:100%;
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: space-around;
+}
+.voice .microphone{
+    width:0.31rem;
+    height:0.45rem;
+    background-image: url('/public/img/geci/ge6.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.voice .horn{
+    width:0.43rem;
+    height:0.42rem;
+    background-image:url('/public/img/geci/ge7.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.voice .progress{
+    width:4.2rem;
+    height:0.05rem;
+    background:#E8D9DD;
+    border-radius: 0.05rem;
+    position: relative;
+}
+.voice .hua{
+    width:60%;
+    height:100%;
+    border-radius:0.05rem;
+    position: absolute;
+    left:0;
+    top:0;
+    background:#FF318D;
+}
+.voice .big{
+    width:0.16rem;
+    height:0.16rem;
+    background:#fff;
+    border-radius: 50%;
+    position:absolute;
+    left:59%;
+    top:-0.08rem;
+    box-shadow: 0 0 0.2rem 0.02rem #ffadea;
+}
+.voice .big .small{
+    width:0.1rem;
+    height:0.1rem;
+    background:#FF318D;
+    border-radius:50%;
+    position: absolute;
+    left:0.03rem;
+    top:0.03rem;
+}
+.voice>div>span{
+    display: inline-block;
+    font-size: 0.24rem;
+    color:#575861;
+}
